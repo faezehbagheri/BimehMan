@@ -1,9 +1,14 @@
 .personal-card{
-    width: 28rem;
+    width: 25rem;
     height: 32rem;
     background-color: white;
     border-radius: 2rem;
     border: 2px solid $gray-dark;
+    margin-left: 5rem;
+
+    &:first-of-type{
+        margin-right: 7rem;
+    }
     
     img{
         height: 9rem;

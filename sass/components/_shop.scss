@@ -1,0 +1,74 @@
+.shop{
+    height: 40rem;
+    width: 100%;
+    background-color: $gray-light;
+    margin-top: 9rem;
+
+    &__main{
+        width: 70%;
+        border-top: 2px solid $gray;
+    }
+
+    &__card{
+        width: 18%;
+        height: 12rem;
+        border-radius: 2rem;
+        border: 1px solid $blue;
+        position: relative;
+
+        i{
+            font-size: 4rem;
+            color: $blue;
+            width: 8rem;
+            text-align: center;
+            background-color: $gray-light;
+            // z-index: 9;
+            position: absolute;
+            top: -15%;
+            left: 50%;
+            transform: translate(-50% , -15%);
+        }
+    
+        button{
+            background-color: white;
+            width: 12rem;
+            height: 3rem;
+            border-radius: 1rem;
+            border: 1px solid $blue;
+            position: absolute;
+            top: 115%;
+            left: 50%;
+            transform: translate(-50% , -115%);
+            outline: none;
+            cursor: pointer;
+        }
+        
+        p{
+            font-size: 1.2rem;
+            color: $gray-dark;
+            text-align: right;
+            padding: 2.2rem 1rem;
+        }
+    }
+
+    p{
+        font-size: 1.3rem;
+        color: $gray-dark;
+        text-align: right;
+    }
+
+    span{
+        font-size: 1.2rem;
+        color: $gray;
+        cursor: pointer;
+    }
+
+    &__icon{
+        font-size: 2rem;
+        color: $orange;
+        padding: 1px 5px;
+        border-radius: 50%;
+        border: 1px solid $gray-dark;
+        margin-right: 1rem;
+    }
+}

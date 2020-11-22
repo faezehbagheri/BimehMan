@@ -1,0 +1,136 @@
+.filter{
+    width: 30%;
+    position: relative;
+    
+    
+    &__main{
+        width: 45%;
+        height: 130rem;
+        padding: 1rem 0;
+        background-color: white;
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 5px $gray;
+
+        div{
+            width: 100%;
+        }
+    }
+
+    input{
+        height: 4.5rem;
+        width: 95%;
+        border-radius: 1rem;
+        outline: none;
+        border: 1px solid $blue;
+        box-shadow: 0 0 5px rgba($color: $gray, $alpha: .5);
+        padding: 1.5rem;
+    }
+
+    label{
+        font-size: 1.4rem;
+        color: $blue;
+    }
+
+    p{
+        font-size: 1.3rem;
+        color: $gray-dark;
+    }
+
+    span{
+        padding: 8px 1rem;
+        width: 95%;
+        text-decoration: none;
+        background-color: white;
+        font-size: 1.6rem;
+        color: $gray-dark;
+        border: 1px solid $blue;
+        border-radius: 1rem;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $blue;
+            border:  1px solid $green;
+        }
+
+        &:hover > i{
+            color: $orange;
+        }
+    }
+
+    i{
+        font-size: 2.6rem;
+        color: $blue;
+        margin-left: 1.5rem;
+        transition: all .3s ease;
+    }
+
+    &__multi-steps{
+        display: flex;
+        flex-direction: column-reverse;
+        
+        width: 100%;
+        > li{
+          text-align: center;
+          display: table-cell;
+          position: relative;
+          margin-top: 3rem;
+          left: 25%;
+          cursor: pointer;
+      
+          p{
+              position: absolute;
+              left: 1%;
+              top: -10%;
+          }
+      
+          &:before{
+            content: "";
+            display: block;
+            margin: 0 auto 4px;
+            background-color: $green;
+            color: transparent;
+            width: 16px;
+            height:16px;
+            z-index: 9;
+            position: relative;
+            border-radius: 50%;
+            border: 2px solid $green;
+          }
+          &:after{
+            content: '';
+            height: 2px;
+            width: 5rem;
+            background-color: $green;
+            position: absolute;
+            top:  -100%;
+            left: 40%;
+            transform: rotate(90deg);
+          }
+          &:last-child{
+            &:after{
+              display: none;
+            }
+          }
+      
+          &.is-active{
+            @extend %remain-steps;
+            &:before{
+              background-color: $green;
+              border-color: $green;
+            }
+      
+            ~ li{
+              color: #808080;
+              @extend %remain-steps;
+              &:before{
+                background-color: white;
+                border-color: $gray;
+              }
+            }
+          }
+        }
+      }
+}
