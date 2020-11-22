@@ -1,0 +1,20 @@
+{
+  "name": "bimehman",
+  "version": "1.0.0",
+  "description": "proje bimeh",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "faeze bagheri",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

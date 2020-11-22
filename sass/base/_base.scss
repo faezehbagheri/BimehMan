@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%;
+    // scroll-behavior: smooth;
+    // transition: all 2s ease;
+
+    
+    @include respond(port-land){ font-size: 50%; }
+
+    @include respond(smallest){ font-size: 45%; }
+    
+    @include respond(phone){ font-size: 38%; }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.red{color:$red;}
+.blue{color:$blue;}
+.green{color:$green;}
+.yellow{color:$yellow;}
+.orange{color:$orange;}
+.bg-red{background-color: $red !important;}
+.bg-green{background-color: $green !important;}
+.bg-blue-light{background-color: $blue-light !important;}

@@ -1,0 +1,45 @@
+.result{
+    width: 100%;
+    height: 100rem;
+    background-color: $gray-light;
+    direction: rtl;
+
+    &__filter-list{
+        width: 100%;
+        height: 9rem;
+        background-color: white;
+        position: relative;
+
+        div{
+            // width: 38%;
+            position: absolute;
+            right: 30%;
+        }
+
+        a{
+            text-decoration: none;
+            color: $gray-dark;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+            display: inline-block;
+            padding: 3.2rem 2rem;
+        }
+    }
+
+    &__result-list{
+        flex: 1;
+        border-right: 8px solid rgba($color: gray, $alpha: .5);
+    }
+
+    &__card-list{
+        width: 100%;
+        background-color: $orange;
+        height: 35rem;
+    
+    }
+}
+
+.active-filter{
+    background-color: rgba($color: $gray-light, $alpha: .9);
+    border-top: 2.5px solid $orange;
+}
