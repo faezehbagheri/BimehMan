@@ -90,11 +90,11 @@ body {
   .bime a,
   .bime a:link,
   .bime a:visited {
-    padding: 6px 1rem;
+    padding: 8px 1rem;
     width: 25rem;
     text-decoration: none;
     background-color: #040F4F;
-    margin: 2rem;
+    margin: 3.5rem 2rem;
     font-size: 1.6rem;
     color: #F5A11D;
     border: 1.5px solid #3CB938;
