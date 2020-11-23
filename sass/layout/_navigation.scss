@@ -1,3 +1,32 @@
 .navigation{
+    width: 100%;
+    height: 4.5rem;
+    direction: rtl;
 
+    ul{
+        width: 71%;
+        height: 100%;
+        background-color: $orange;
+        list-style-type: none;
+        padding-right: 3.8rem;
+    }
+
+    li{
+        height: 100%;
+        padding: 1rem 3.5rem;
+        cursor: pointer;
+
+        &:not(:last-of-type){
+            border-left: 1px solid $blue;
+        }
+    }
+
+    a,
+    a:link,
+    a:visited{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $blue;
+        text-decoration: none;
+    }
 }

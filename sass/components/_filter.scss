@@ -44,11 +44,19 @@
         width: 95%;
         text-decoration: none;
         background-color: white;
-        font-size: 1.6rem;
-        color: $gray-dark;
         border: 1px solid $blue;
         border-radius: 1rem;
         transition: all .3s ease;
+
+        p{
+          font-size: 1.6rem;
+          color: $gray-dark;
+        }
+
+        p.hide{
+          display: none;
+          color: $orange;
+        }
 
         &:hover{
             background-color: $blue;
@@ -57,6 +65,14 @@
 
         &:hover > i{
             color: $orange;
+        }
+
+        &:hover > p.show{
+          display: none;
+        }
+
+        &:hover > p.hide{
+          display: inline;
         }
     }
 

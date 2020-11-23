@@ -17,6 +17,398 @@
     <title>Bime Man</title>
 </head>
 <body>
-    
+    <!-- هدر -->
+    <header class="header flex justi-center">
+        <div class="header__main flex r-reverse align-center justi-between">
+            <div class=" flex r-reverse align-center">
+                <img src="assets/img/logo.png">
+                <nav>
+                    <ul class="flex r-reverse">
+                        <li class="active-nav"><a href="#">صفحه ی اصلی</a></li>
+                        <li><a href="#">همکاران</a></li>
+                        <li><a href="#">دانستنی ها</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class=" flex r-reverse align-center" style="width: 16%;">
+                <i class="fas fa-user"></i>
+                <p>ثبت نام <span>/</span> ورود</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- نویگیشن -->
+    <nav class="navigation flex align-center justi-center">
+        <ul class="flex align-center">
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">درباره‌ی ما</a></li>
+            <li><a href="#">همکاری با ما</a></li>
+            <li><a href="#">قوانین و مقررات</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- اطلاعات بیمه -->
+        <section class="bime homepage flex justi-center">
+            <div class="bime__main flex">
+                <div class="bime__container flex column align-center justi-around" style="width: 20%;">
+                    <a href="#" class="flex bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> موتور سیکلت</a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> شخص ثالث </a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> آتش سوزی </a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> مسافرتی </a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> مسئولیت پزشکان </a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> سازمانی </a>
+                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> عمر </a>
+                </div>
+                <div class="bime__container flex column justi-around align-center" style="width: 74%; height: 100%;">
+                    <div class="bime__row flex justi-between">
+                        <div class="flex column align-start">
+                            <label>نوع وسیله نقلیه </label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> سواری</option>
+                                    <option value="vanet"> وانت </option>
+                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                    <option value="kamion"> کامیون </option>
+                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>برند خودرو</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> هیوندا</option>
+                                    <option value="vanet"> نیسان</option>
+                                    <option value="van"> سیترون</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>مدل خودرو</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> پژو 405</option>
+                                    <option value="vanet"> پژو 206 </option>
+                                    <option value="van"> پژو 207 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bime__row flex justi-between">
+                        <div class="flex column align-start">
+                            <label>نام شرکت بیمه قبلی</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> سواری</option>
+                                    <option value="vanet"> وانت </option>
+                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                    <option value="kamion"> کامیون </option>
+                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>تاریخ شروع بیمه نامه</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> هیوندا</option>
+                                    <option value="vanet"> نیسان</option>
+                                    <option value="van"> سیترون</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>تاریخ پایان بیمه نامه قبلی</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> پژو 405</option>
+                                    <option value="vanet"> پژو 206 </option>
+                                    <option value="van"> پژو 207 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bime__checkbox flex align-center">
+                        <span>بیمه نامه خسارت دارد</span>
+                        <div>
+                            <input id="toggle" type="checkbox" />
+                            <label for="toggle"></label>
+                        </div>
+                    </div>
+                    <div class="bime__bg-blue flex justi-between">
+                        <div class="flex column align-start">
+                            <label>نام شرکت بیمه قبلی</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> سواری</option>
+                                    <option value="vanet"> وانت </option>
+                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                    <option value="kamion"> کامیون </option>
+                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>تاریخ شروع بیمه نامه</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> هیوندا</option>
+                                    <option value="vanet"> نیسان</option>
+                                    <option value="van"> سیترون</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>تاریخ پایان بیمه نامه قبلی</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> پژو 405</option>
+                                    <option value="vanet"> پژو 206 </option>
+                                    <option value="van"> پژو 207 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bime__row flex justi-between">
+                        <div class="flex column align-start">
+                            <label>نام شرکت بیمه قبلی</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> سواری</option>
+                                    <option value="vanet"> وانت </option>
+                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                    <option value="kamion"> کامیون </option>
+                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>تاریخ شروع بیمه نامه</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> هیوندا</option>
+                                    <option value="vanet"> نیسان</option>
+                                    <option value="van"> سیترون</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex column align-start">
+                            <label>تاریخ پایان بیمه نامه قبلی</label>
+                            <div class="container">
+                                <select class="select2" name="country">
+                                    <option value="savari" selected> پژو 405</option>
+                                    <option value="vanet"> پژو 206 </option>
+                                    <option value="van"> پژو 207 </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bime__row flex justi-end">
+                        <!-- <button class="bime__btn bg-red">بستن بدون تغییر</button> -->
+                        <button class="bime__btn bg-green">ثبت اطلاعات جدید</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- یادآور بیمه -->
+        <section class="reminder flex align-center justi-center">
+            <div class="reminder__main flex column justi-center align-center">
+                <h2>یادآور تمدید و اقساط بیمه</h2>
+                <form class="flex justi-around align-end" style="width: 100%;">
+                    <div class="flex column">
+                        <label for="type">انتخاب نوع بیمه</label>
+                        <input id="type" type="text">
+                    </div>
+                    <div class="flex column">
+                        <label for="name">نام</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div class="flex column">
+                        <label for="family">نام خانوادگی</label>
+                        <input id="family" type="text">
+                    </div>
+                    <div class="flex column">
+                        <label for="phone">شماره تلفن همراه</label>
+                        <input id="phone" type="text">
+                    </div>
+                    <div class="flex column">
+                        <label for="tarikh">تاریخ اتمام بیمه نامه</label>
+                        <input id="tarikh" type="text">
+                    </div>
+                    <button type="submit">ثبت</button>
+                </form>
+            </div>
+        </section>
+        <!-- سوالات متداول -->
+        <section class="question column">
+            <!-- تب ها -->
+            <div class="question__filter flex align-center">
+                <nav>
+                    <a class="active-filter" href="#">سوالات متداول</a>
+                    <a href="#">درباره‌ی بیمه بدنه</a>
+                    <a href="#">درخواست مشاوره</a>
+                </nav>
+            </div>
+            <div class="question__main flex align-center justi-start">
+                <div class="question__tab-amodi flex column align-center justi-start">
+                    <div class="question__tab-item flex column align-center" id="q1" onclick="openTab('#q1')">
+                        <div class="flex justi-between align-center">
+                            <h3>آیا حتما برای صدور بیمه نامه باید حضوری مراجعه کنم ؟</h3>
+                            <i class="fas fa-angle-right right"></i>
+                            <i class="fas fa-angle-up up"></i>
+                        </div>
+                        <p> منظور از شخص ثالث، هر شخصی است که به سبب حوادث وسایل نقلیه موتوری
+                            دچار زیان‌های بدنی و مالی شود به استثنای راننده مسبب حادثه. شرکت بیمه،
+                            هنگام صدور بیمه‌نامه شخص ثالث، با دریافت حق‌بیمه حوادث راننده، خود راننده را
+                            هم تا حد دیه ماه حرام تحت پوشش بیمه حوادث قرار می‌دهد؛ بیمه حوادث راننده
+                           مسئولیت جبران خسارت‌های فوت و نقص عضو راننده مقصر را به عهده دارد</p>
+                    </div>
+                    <div class="question__tab-item flex column align-center" id="q2" onclick="openTab('#q2')">
+                        <div class="flex justi-between align-center">
+                            <h3>میشه مبلغ حق بیمه رو بعد ازتحویل بیمه نامه پرداخت کنم ؟</h3>
+                            <i class="fas fa-angle-right right"></i>
+                            <i class="fas fa-angle-up up"></i>
+                        </div>
+                        <p> منظور از شخص ثالث، هر شخصی است که به سبب حوادث وسایل نقلیه موتوری
+                            دچار زیان‌های بدنی و مالی شود به استثنای راننده مسبب حادثه. شرکت بیمه،
+                            هنگام صدور بیمه‌نامه شخص ثالث، با دریافت حق‌بیمه حوادث راننده، خود راننده را
+                            هم تا حد دیه ماه حرام تحت پوشش بیمه حوادث قرار می‌دهد؛ بیمه حوادث راننده
+                           مسئولیت جبران خسارت‌های فوت و نقص عضو راننده مقصر را به عهده دارد</p>
+                    </div>
+                    <div class="question__tab-item flex column align-center active-tab" id="q3" onclick="openTab('#q3')">
+                        <div class="flex justi-between align-center">
+                            <h3>می توانم سفارش خودم را تلفنی ثبت کنم ؟</h3>
+                            <i class="fas fa-angle-right right"></i>
+                            <i class="fas fa-angle-up up"></i>
+                        </div>
+                        <p> منظور از شخص ثالث، هر شخصی است که به سبب حوادث وسایل نقلیه موتوری
+                            دچار زیان‌های بدنی و مالی شود به استثنای راننده مسبب حادثه. شرکت بیمه،
+                            هنگام صدور بیمه‌نامه شخص ثالث، با دریافت حق‌بیمه حوادث راننده، خود راننده را
+                            هم تا حد دیه ماه حرام تحت پوشش بیمه حوادث قرار می‌دهد؛ بیمه حوادث راننده
+                           مسئولیت جبران خسارت‌های فوت و نقص عضو راننده مقصر را به عهده دارد</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- فروشگاه اینترنتی -->
+        <section class="shop flex justi-center">
+            <div class="shop__main flex column justi-around">
+                <div class="flex r-reverse align-center justi-around">
+                    <div class="shop__card">
+                        <i class="fas fa-umbrella"></i>
+                        <p> ایلیا در سراسر ایران اقدام به تحویل
+                            فوری سفارشات نموده است سفارشات
+                            پس از گذشت 24 ساعت تحویل می
+                           گردد</p>
+                        <button>سادگی در خرید</button>
+                    </div>
+                    <div class="shop__card">
+                        <i class="fas fa-truck"></i>
+                        <p> در برخی موارد امکان پرداخت سفارش
+                            در محل وجود ندارد اما در هر صورت
+                           .ارسال کالا برای شما رایگان خواهد بود</p>
+                        <button>ارسال رایگان</button>
+                    </div>
+                    <div class="shop__card">
+                        <i class="fas fa-clock"></i>
+                        <p>اگر کالایی نشان غیر اصل نداشته باشد. ایلیا اصالت این بیمه ها را تضمین و
+                            همۀ آن‌ها را با گارانتی اصلی و معتبر
+                           .عرضه می‌کند</p>
+                        <button>سرعت در خرید</button>
+                    </div>
+                    <div class="shop__card">
+                        <i class="fas fa-headphones"></i>
+                        <p> در شهر تهران و برخی از شهرهای
+                            پرجمعیت پرسنل ما 24 ساعته
+                            پاسخگوی سوالات و پشتیبانی از شما
+                           .هستند</p>
+                        <button>پشتیبانی 24 ساعته</button>
+                    </div>
+                </div>
+                <p>فروشگاه اینترنتی مو تن رو، لوازم آرایشی و بهداشتی، همراه زیبایی شما
+                    فروشگاه اینترنتی مو تن رو، مجموعه ی کاملی از بهترین برندهای لوازم آرایشی و بهداشتی در سراسر جهان را فراهم آورده تا نیاز یکایک شما برای خرید اینترنتی لوازم آرایشی و بهداشتی را برآورده نماید. این مجموعه، شامل انواع لوازم آرایشی برای آرایش صورت (کرم پودر، پنکک، کانسیلر ...)، آرایش چشم (سایه چشم ، ریمل، مداد و خط چشم)، آرایش ابرو (ریمل ابرو، سایه ابرو، مداد ابرو...(، آرایش لب (رژ لب، خط لب، بالم لب)، آرایش بدن (حنای طراحی، برچسب تاتو)، آرایش ناخن (لاک ناخن ،مراقبت از ناخن، ست مانیکور پدیکور، دستگاه UV و....) و ابزار آرایش شامل: براش آرایشی، آینه، پد آرایشی، فرمژه، مژه مصنوعی، قیچی، تیغ ابرو، موچین و ... می باشد.
+                    </p>
+                <span class="flex r-reverse align-center justi-center">مشاهده بیشتر <i class="shop__icon fas fa-angle-down"></i></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="footer flex justi-center">
+        <div class="footer__main flex column align-center">
+            <div class="footer__border flex align-center justi-between">
+                <div class="flex column">
+                    <h3>شیوه های پرداخت</h3>
+                    <a href="#">حریم خصوصی</a>
+                    <a href="#">فرصت های شغلی</a>
+                    <a href="#">رویه ارسال سفارش</a>
+                </div>
+                <div class="flex column">
+                    <h3>شیوه های پرداخت</h3>
+                    <a href="#">حریم خصوصی</a>
+                    <a href="#">فرصت های شغلی</a>
+                    <a href="#">رویه ارسال سفارش</a>
+                </div>
+                <div class="flex column">
+                    <h3>شیوه های پرداخت</h3>
+                    <a href="#">حریم خصوصی</a>
+                    <a href="#">فرصت های شغلی</a>
+                    <a href="#">رویه ارسال سفارش</a>
+                </div>
+                <div class="flex column">
+                    <h3>شیوه های پرداخت</h3>
+                    <a href="#">حریم خصوصی</a>
+                    <a href="#">فرصت های شغلی</a>
+                    <a href="#">رویه ارسال سفارش</a>
+                </div>
+                <div>
+                    <h3>چگونه از تمدید بیمه ی خود باخبر شویم؟</h3>
+                    <form class="flex column">
+                        <label for="email">ایمیل خود را وارد کنید:</label>
+                        <input type="email" id="email" name="email" />
+                        <button type="submit">ارسال</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__border flex justi-around align-center">
+               <div class="flex">
+                   <img class="footer__img-brand" src="assets/img/resane.png">
+                   <img class="footer__img-brand" src="assets/img/iwmf.png">
+                   <img class="footer__img-brand" src="assets/img/tandis.png">
+                   <img class="footer__img-brand" src="assets/img/pic-10004.png">
+                   <img class="footer__img-brand" src="assets/img/loh-ehtemam.png">
+               </div>
+               <div>
+                   <img class="footer__img-app" src="assets/img/app-store-button.png">
+                   <img class="footer__img-app" src="assets/img/google-play-button.png">
+                   <img class="footer__img-app" src="assets/img/bazaar.png">
+               </div>
+            </div>
+            <div class="footer__border flex align-center justi-center">
+                <img class="footer__absolute-pos" src="assets/img/logo.png">
+                <div class="flex column align-center justi-between" style="height: 10rem;">
+                    <div class="flex">
+                        <a href="#"><i class="fas fa-globe-asia"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="flex">
+                        <a class="footer__left-border" href="#">ارتباط با ما</a>
+                        <a class="footer__left-border" href="#">سخن ما</a>
+                        <a class="footer__left-border" href="#">تبلیغات در سایت</a>
+                        <a href="#">اعلام مشکل در سایت</a>
+                    </div>
+                    <span>Iran News Agency  is licensed under a  Creative Commons Attribution 4.0 International License</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

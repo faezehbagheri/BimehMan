@@ -15,7 +15,9 @@
         left: -30%;
         }
 
-        a{
+        a,
+        a:link,
+        a:visited{
             text-decoration: none;
             color: $gray-dark;
             font-size: 1.4rem;
@@ -51,15 +53,4 @@
 .active-filter{
     background-color: rgba($color: $gray-light, $alpha: .9);
     border-top: 2.5px solid $orange;
-}
-
-
-%remain-steps{
-  &:before {
-    font-family: inherit;
-    font-weight: 700;
-  }
-  &:after{
-    background-color: $gray;
-  }
 }

@@ -9,6 +9,7 @@
     border: 2px solid transparent;
     transition: all .3s ease;
     max-width: 85rem;
+    position: relative;
 
     &:hover{
         border: 2px solid $green;
@@ -52,6 +53,8 @@
         border: none;
         outline: none;
         color: white;
+        background-color: white;
+        box-shadow: 0 0 5px $gray;
         font-size: 1.4rem;
         margin: 1rem 2rem;
         cursor: pointer;
@@ -98,25 +101,43 @@
             color: #040F4F !important;
         }
 
-        button{
-            background-color: transparent;
-            color: $gray;
-            position: absolute;
-            left: 1%;
-            top: 80%;
-            cursor: pointer;
+    }
 
-            i{
-                color: $gray-dark;
-                margin: 8px;
-            }
+    &__btn{
+        // background-color: transparent;
+        color: $gray !important;
+        // box-shadow: 0 0 0 transparent;
+        position: absolute;
+        cursor: pointer;
+
+        i{
+            color: $gray-dark;
+            margin: 8px;
         }
+    }
+    
+    button.bishtr{
+        background-color: transparent;
+        color: $gray;
+        position: absolute;
+        left: 1%;
+        top: 80%;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    button.kamtr{
+        display: none;
+        background-color: transparent;
+        top: 85%;
+        left: 5%;
+        box-shadow: none;
     }
 
     table {
         border-collapse: collapse;
         width: 80%;
-        margin-top: 3rem;
+        margin: 3rem 0;
         display: none;
       
       td{
@@ -138,4 +159,49 @@
       }
     }
 
+    &__ghest{
+        // height: 20rem;
+        margin-top: 3rem;
+        width: 80%;
+        
+        span{
+            font-size: 1.3rem;
+            color: $blue-light;
+            width: auto;
+            background-color: transparent;
+            text-align: center;
+        }
+    }
+
+    &__dashed-border{
+        width: 24%;
+        height: 9rem;
+        border: 1px dashed $gray-dark;
+        border-radius: 1.2rem;
+        
+        h3{
+            font-size: 1.3rem;
+            color: $gray-dark;
+        }
+
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+.display{
+
+    table{
+        display: table !important;
+    }
+
+    button.bishtr{
+        display: none !important;
+    }
+
+    button.kamtr{
+        display: inline !important;
+    }
 }

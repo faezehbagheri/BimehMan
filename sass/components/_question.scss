@@ -1,0 +1,116 @@
+.question{
+    direction: rtl;
+
+    &__filter{
+        height: 9rem;
+
+        nav{
+            position: relative;
+            right: 22%;
+        }
+
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            color: $gray-dark;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+            display: inline-block;
+            padding: 3.2rem 2rem;
+        }
+    }
+
+    &__main{
+        min-height: 50rem;
+        padding: 2rem 0;
+        width: 100%;
+        background-image: url(../../assets/img/question.png);
+    }
+
+    &__tab-amodi{
+        width: 37%;
+        position: relative;
+        right: 22%;
+    }
+
+    &__tab-item{
+        width: 100%;
+
+        div{
+            height: 7rem;
+            width: 95%;
+            background-color: white;
+            border-radius: 1.2rem;
+            box-shadow: 0 0 5px rgba($color: $gray, $alpha: .8);
+            cursor: pointer;
+        }
+
+        h3{
+            margin-right: 2.5rem;
+            font-size: 1.5rem;
+            color: $gray-dark;
+            font-weight: 500;
+        }
+
+        i{
+            font-size: 2rem;
+            border-radius: 50%;
+            background-color: $gray;
+            color: white;
+            padding: 4px 9px;
+            margin-left: 2.5rem;
+            position: relative;
+            transition: all .3s ease;
+            position: absolute;
+            left: 2%;
+        }
+        
+        i.up{
+            background-color: $green-light;
+            padding: 5px 9px;
+            display: none;
+        }
+
+        p{
+            width: 85%;
+            padding: 5px 2rem;
+            font-size: 1.4rem;
+            color: white;
+            height: 0;
+            overflow: hidden;
+            border-left: 2px solid white;
+            transition: all .3s ease;
+        }
+
+        &:last-of-type{
+            p{padding: 0;}
+        }
+    }
+}
+
+.active-tab{
+    position: relative;
+    margin-bottom: 1rem;
+    
+    h3{
+        color: $green-light;
+    }
+
+    
+    p{
+        height: 20rem;
+        overflow: visible;
+        padding:  2rem !important;
+    }
+
+    i.right{
+        display: none;
+    }
+
+    i.up{
+        display: inline;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+}
