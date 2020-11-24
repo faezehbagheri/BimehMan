@@ -7,6 +7,7 @@
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/function.js"></script>
+    <script type="text/javascript" src="assets/js/jqueryFunction.js"></script>
 
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -53,13 +54,13 @@
             <div class="bime__main flex">
                 <div class="bime__container flex column align-center justi-around" style="width: 20%;">
                     <a href="#" class="flex bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> موتور سیکلت</a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> شخص ثالث </a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> آتش سوزی </a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> مسافرتی </a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> مسئولیت پزشکان </a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> سازمانی </a>
-                    <a href="#" class="flex"><i class="fas fa-car-crash"></i> عمر </a>
+                    <a href="#" class="flex"><i class="fas fa-motorcycle"></i> موتور سیکلت</a>
+                    <a href="#" class="flex"><i class="fas fa-car"></i> شخص ثالث </a>
+                    <a href="#" class="flex"><i class="fas fa-fire"></i> آتش سوزی </a>
+                    <a href="#" class="flex"><i class="fas fa-plane"></i> مسافرتی </a>
+                    <a href="#" class="flex"><i class="fas fa-user-md"></i> مسئولیت پزشکان </a>
+                    <a href="#" class="flex"><i class="fas fa-house-damage"></i> سازمانی </a>
+                    <a href="#" class="flex"><i class="fas fa-user-friends"></i> عمر </a>
                 </div>
                 <div class="bime__container flex column justi-around align-center" style="width: 74%; height: 100%;">
                     <div class="bime__row flex justi-between">
@@ -248,15 +249,15 @@
         <!-- سوالات متداول -->
         <section class="question column">
             <!-- تب ها -->
-            <div class="question__filter flex align-center">
-                <nav>
-                    <a class="active-filter" href="#">سوالات متداول</a>
-                    <a href="#">درباره‌ی بیمه بدنه</a>
-                    <a href="#">درخواست مشاوره</a>
+            <div class="tab-amodi flex align-center">
+                <nav class="q-tabs">
+                    <a data-trigger="content01" class="active-filter">سوالات متداول</a>
+                    <a data-trigger="content02">درباره‌ی بیمه بدنه</a>
+                    <a data-trigger="content03">درخواست مشاوره</a>
                 </nav>
             </div>
             <div class="question__main flex align-center justi-start">
-                <div class="question__tab-amodi flex column align-center justi-start">
+                <div class="q-tabcontent question__tab-ofoghi flex column align-center justi-start" id="content01">
                     <div class="question__tab-item flex column align-center" id="q1" onclick="openTab('#q1')">
                         <div class="flex justi-between align-center">
                             <h3>آیا حتما برای صدور بیمه نامه باید حضوری مراجعه کنم ؟</h3>
@@ -292,6 +293,93 @@
                             هنگام صدور بیمه‌نامه شخص ثالث، با دریافت حق‌بیمه حوادث راننده، خود راننده را
                             هم تا حد دیه ماه حرام تحت پوشش بیمه حوادث قرار می‌دهد؛ بیمه حوادث راننده
                            مسئولیت جبران خسارت‌های فوت و نقص عضو راننده مقصر را به عهده دارد</p>
+                    </div>
+                </div>
+                <div class="q-tabcontent" id="content02"></div>
+                <div class="q-tabcontent" id="content03"></div>
+            </div>
+        </section>
+        <!-- بیمه های همکار -->
+        <section class="hamkar">            
+            <!-- تب ها -->
+            <div class="tab-amodi flex align-center">
+                <nav class="h-tabs">
+                    <a data-trigger="content-1" class="active-filter width">انواع بیمه نامه های همکار با سایت ما</a>
+                    <a data-trigger="content-2">بیشترین مخاطب</a>
+                    <a data-trigger="content-3">بیشترین سابقه</a>
+                </nav>
+            </div>
+            <div class="hamkar__main flex align-center justi-center">
+                <div class="h-tabcontent flex justi-around align-center  owl-carousel" id="content-1" style=" width: 60%;">
+                    <div class="card flex column align-center justi-around item">
+                        <img src="assets/img/bimema.png">
+                        <h2>بیمه ملت</h2>
+                        <a href="#">تاریخچه</a>
+                        <a href="#">اهداف و چشم اندازها</a>
+                        <a href="#">چهارچوب سازمان</a>
+                        <a href="#">اطلاعات تماس</a>
+                        <p> شركت بيمه سامان در تاریخ
+                            1383/11/27 به منظور ارائه خدمات بیمه
+                            های بازرگانی در رشته بيمه‌هاي اموال
+                            مسئوليت و اشخاص با سرمايه 200
+                        ...ميليارد ريالي منقسم به 200</p>
+                        <a class="btn" href="#">خواندن همه</a>
+                    </div>
+                    <div class="card flex column align-center justi-around item">
+                        <img src="assets/img/bimema.png">
+                        <h2>بیمه ملت</h2>
+                        <a href="#">تاریخچه</a>
+                        <a href="#">اهداف و چشم اندازها</a>
+                        <a href="#">چهارچوب سازمان</a>
+                        <a href="#">اطلاعات تماس</a>
+                        <p> شركت بيمه سامان در تاریخ
+                            1383/11/27 به منظور ارائه خدمات بیمه
+                            های بازرگانی در رشته بيمه‌هاي اموال
+                            مسئوليت و اشخاص با سرمايه 200
+                        ...ميليارد ريالي منقسم به 200</p>
+                        <a class="btn" href="#">خواندن همه</a>
+                    </div>
+                    <div class="card flex column align-center justi-around item">
+                        <img src="assets/img/bimema.png">
+                        <h2>بیمه ملت</h2>
+                        <a href="#">تاریخچه</a>
+                        <a href="#">اهداف و چشم اندازها</a>
+                        <a href="#">چهارچوب سازمان</a>
+                        <a href="#">اطلاعات تماس</a>
+                        <p> شركت بيمه سامان در تاریخ
+                            1383/11/27 به منظور ارائه خدمات بیمه
+                            های بازرگانی در رشته بيمه‌هاي اموال
+                            مسئوليت و اشخاص با سرمايه 200
+                        ...ميليارد ريالي منقسم به 200</p>
+                        <a class="btn" href="#">خواندن همه</a>
+                    </div>
+                    <div class="card flex column align-center justi-around item">
+                        <img src="assets/img/bimema.png">
+                        <h2>بیمه ملت</h2>
+                        <a href="#">تاریخچه</a>
+                        <a href="#">اهداف و چشم اندازها</a>
+                        <a href="#">چهارچوب سازمان</a>
+                        <a href="#">اطلاعات تماس</a>
+                        <p> شركت بيمه سامان در تاریخ
+                            1383/11/27 به منظور ارائه خدمات بیمه
+                            های بازرگانی در رشته بيمه‌هاي اموال
+                            مسئوليت و اشخاص با سرمايه 200
+                        ...ميليارد ريالي منقسم به 200</p>
+                        <a class="btn" href="#">خواندن همه</a>
+                    </div>
+                    <div class="card flex column align-center justi-around item">
+                        <img src="assets/img/bimema.png">
+                        <h2>بیمه ملت</h2>
+                        <a href="#">تاریخچه</a>
+                        <a href="#">اهداف و چشم اندازها</a>
+                        <a href="#">چهارچوب سازمان</a>
+                        <a href="#">اطلاعات تماس</a>
+                        <p> شركت بيمه سامان در تاریخ
+                            1383/11/27 به منظور ارائه خدمات بیمه
+                            های بازرگانی در رشته بيمه‌هاي اموال
+                            مسئوليت و اشخاص با سرمايه 200
+                        ...ميليارد ريالي منقسم به 200</p>
+                        <a class="btn" href="#">خواندن همه</a>
                     </div>
                 </div>
             </div>

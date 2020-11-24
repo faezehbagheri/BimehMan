@@ -12,7 +12,7 @@
 
         div{
             position: relative;
-        left: -30%;
+            left: -30%;
         }
 
         a,
@@ -24,6 +24,8 @@
             margin-left: 1rem;
             display: inline-block;
             padding: 3.2rem 2rem;
+            cursor: pointer;
+            transition: all .3s ease;
         }
     }
 
@@ -37,7 +39,7 @@
         width: 100%;
         background-color: $orange;
         height: 35rem;
-    
+        box-shadow:inset 0 0 5px rgba($color: #000000, $alpha: .3);
     }
 
     &__column-list{
@@ -50,7 +52,7 @@
     }
 }
 
-.active-filter{
+a.active-filter{
     background-color: rgba($color: $gray-light, $alpha: .9);
     border-top: 2.5px solid $orange;
 }

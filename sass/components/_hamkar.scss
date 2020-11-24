@@ -1,1 +1,11 @@
-.hamkar{}
+.hamkar{
+    position: relative;
+    // direction: rtl;
+
+    &__main{
+        width: 100%;
+        padding: 5rem 0;
+        background-color: $gray-light;
+        min-height: 50rem;
+    }
+}

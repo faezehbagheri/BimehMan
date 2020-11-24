@@ -1,0 +1,91 @@
+.card{
+    width: 25rem;
+    // height: 35rem;
+    padding: 2rem 0;
+    background-color: white;
+    border-radius: 1.8rem;
+    border: 2px solid $blue;
+    direction: rtl;
+
+    img{
+        height: 9rem;
+        width:  8rem !important;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        color: $green;
+    }
+
+    a,
+    a:link,
+    a:visited{
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: $blue;
+        width: 95%;
+        text-align: center;
+        padding: 8px 0;
+        border: 2px solid $blue;
+        border-radius: 1.2rem;
+        margin: 5px;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: .3);
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $blue;
+            color: $orange;
+            border-color: $green;
+            padding-right: 2rem;
+        }
+
+        &:hover ~ p{
+            height: 15rem;
+            padding: 1.2rem;
+        }
+        
+        &:hover ~ a.btn{
+            display: inline;
+        }
+    }
+
+    a.btn{
+        border: none;
+        box-shadow: none;
+        width: 90%;
+        font-size: 1.3rem;
+        color: $orange;
+        text-align: left;
+        display: none;
+        margin: 0;
+        padding: 0;
+
+        &:hover{
+            background-color: white;
+            padding-right: 0;
+        }
+    }
+
+    p{
+        font-size: 1.4rem;
+        // padding: 1.2rem;
+        text-align: justify;
+        color: $gray-dark;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+
+}
+
+.card-active{
+
+    p{
+        height: 15rem;
+        padding: 1.2rem;
+    }
+
+    a.btn{
+        display: inline;
+    }
+}

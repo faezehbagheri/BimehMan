@@ -51,11 +51,11 @@
         <!-- اطلاعات بیمه -->
         <section class="bime flex justi-center">
             <div class="bime__main flex">
-                <div class="flex column align-center" style="width: 20%; padding-top: 3.2rem;">
+                <div class="flex column align-center" style="width: 20%; padding-top: 3rem;">
                     <a href="#" class="bime-active flex"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
                 </div>
                 <div class="flex column justi-around align-center" style="width: 74%; height: 100%;">
-                    <div class="bime__row flex justi-between">
+                    <div class="bime__row small flex justi-between align-end" id="small-view">
                         <div class="flex column align-start">
                             <label>نوع وسیله نقلیه </label>
                             <div class="container">
@@ -89,8 +89,9 @@
                                 </select>
                             </div>
                         </div>
+                        <button class="bime__btn bg-green" onclick="saveInfo()" id="btn-1">ثبت اطلاعات جدید</button>
                     </div>
-                    <div class="bime__row flex justi-between">
+                    <div class="bime__row display flex justi-between">
                         <div class="flex column align-start">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="container">
@@ -125,14 +126,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bime__checkbox flex align-center">
+                    <div class="bime__checkbox display flex align-center">
                         <span>بیمه نامه خسارت دارد</span>
                         <div>
                             <input id="toggle" type="checkbox" />
                             <label for="toggle"></label>
                         </div>
                     </div>
-                    <div class="bime__bg-blue flex justi-between">
+                    <div class="bime__bg-blue display flex justi-between">
                         <div class="flex column align-start">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="container">
@@ -167,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bime__row flex justi-between">
+                    <div class="bime__row display flex justi-between">
                         <div class="flex column align-start">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="container">
@@ -202,8 +203,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bime__row flex justi-end">
-                        <button class="bime__btn bg-red">بستن بدون تغییر</button>
+                    <div class="bime__row display flex justi-end">
+                        <button class="bime__btn bg-red" onclick="closeWithoutSave()">بستن بدون تغییر</button>
                         <button class="bime__btn bg-green">ثبت اطلاعات جدید</button>
                     </div>
                 </div>
