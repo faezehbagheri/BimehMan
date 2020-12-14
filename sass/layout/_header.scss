@@ -5,9 +5,8 @@
     box-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
     
     &__main{
-        width: 78%;
+        // width: 78%;
         height: 100%;
-        // background-color: pink;
     }
 
     img{
@@ -17,12 +16,12 @@
 
     ul{
         list-style-type: none;
-        margin-right: 4rem;
+        // margin-right: 4rem;
     }
 
     li{
-        // background-color: pink;
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem;
+        border-bottom: 3px solid transparent;
         transition: all .2s ease;
 
         &:hover{

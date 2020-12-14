@@ -12,24 +12,21 @@
         background-size: cover;
         
     }
-
     
     &__container{
         background-color: rgba($color: #ccc, $alpha: .8);
         border-radius: 2rem;
-        margin: 0 1rem;
+        margin: 0 -1rem;
+        height: 50rem;
     }
 
-    &__main{
-        width: 70%;
-        // height: 52rem;
-    }
+    &__content{width: 100%;}
 
     a,
     a:link,
     a:visited{
         padding: 8px 1rem;
-        width: 25rem;
+        // width: 95%;
         text-decoration: none;
         background-color: white;
         // margin: 3.5rem 2rem;
@@ -38,6 +35,7 @@
         border: 1.5px solid $blue;
         border-radius: 8px;
         transition: all .3s ease;
+        cursor: pointer;
 
         &:hover{
             background-color: $blue !important;
@@ -82,7 +80,7 @@
             position: relative;
             display: block;
             width: 6rem;
-            height: 3rem;
+            height: 3.2rem;
             border-radius: 3rem;
             margin: 0 auto;
             background-color: #fff;
@@ -96,7 +94,7 @@
           label:before {
             content: ' ';
             position: absolute;
-            top: 1.5px;
+            top: 2px;
             left: 2px;
             width:  2.8rem;
             height: 2.8rem;
@@ -118,13 +116,14 @@
     }
 
     &__row{
-        width: 90%;
+        width: 95%;
         margin: 1rem;
     }
 
     button{
-        width: 15rem;
+        // width: 15rem;
         height: 4.5rem;
+        font-size: 1.6rem;
         border-radius: 8px;
         color: white;
         border: 1px solid $blue;
@@ -135,7 +134,7 @@
 
     &__bg-blue{
         background-color: $blue;
-        width: 90%;
+        width: 100%;
         margin: 1rem; 
         padding: 1rem 2rem; 
         border-radius: 1rem; 
@@ -164,46 +163,46 @@
 }
 
 
-.container {
-    margin: 0 auto;
-    width: 25rem;
+// .container {
+//     margin: 0 auto;
+//     width: 25rem;
 
-    .select2 {
-        width: 100% !important;
-        text-align: right !important;
-        direction: rtl !important;
-        height: 4.5rem;
-        border-radius: 8px;
-        border: 2px solid $blue;
-        outline: none;
-        padding: 0 5px;
-    }
+//     .select2 {
+//         width: 100% !important;
+//         text-align: right !important;
+//         direction: rtl !important;
+//         height: 4.5rem;
+//         border-radius: 8px;
+//         border: 2px solid $blue;
+//         outline: none;
+//         padding: 0 5px;
+//     }
 
-    .select2-container {
-        .select2-selection--single {
-            height: 5rem;
-            font-size: 1.6rem; 
-            position: relative;
-            outline: none;
-            border: none;
+//     .select2-container {
+//         .select2-selection--single {
+//             height: 5rem;
+//             font-size: 1.6rem; 
+//             position: relative;
+//             outline: none;
+//             border: none;
 
-            .select2-selection__rendered {
-                line-height: 10rem;
-            }
+//             .select2-selection__rendered {
+//                 line-height: 10rem;
+//             }
 
-            .select2-selection__arrow {
-                top: 50%;
-                right: 82%;
-                transform: translate(-82%, -50%);
-            }
+//             .select2-selection__arrow {
+//                 top: 50%;
+//                 right: 82%;
+//                 transform: translate(-82%, -50%);
+//             }
 
-            .select2-container--default {
-                .select2-results > .select2-results__options {
-                    -webkit-overflow-scrolling: touch; /* use momentum scrolling */
-                    text-align: right !important;
-                    direction: rtl !important;
-                }
-            }
-        }
-    }
-}
+//             .select2-container--default {
+//                 .select2-results > .select2-results__options {
+//                     -webkit-overflow-scrolling: touch; /* use momentum scrolling */
+//                     text-align: right !important;
+//                     direction: rtl !important;
+//                 }
+//             }
+//         }
+//     }
+// }

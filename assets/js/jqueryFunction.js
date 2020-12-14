@@ -1,4 +1,17 @@
 $(document).ready(function () { 
+
+    $('.bime__content').hide();
+    var activeTab = $(".bime-tabs").find('a.bime-active').data('trigger');
+    $('#' + activeTab).show();
+
+    $('.bime-tabs>a').on('click', function () {
+        var tabId = $(this).data('trigger');
+        $('#' + tabId).show();
+        $('.bime__content:not(#' + tabId + ')').hide();
+        $(this).addClass('bime-active');
+        $(this).siblings('a').removeClass('bime-active');
+    });
+
     $('.q-tabcontent').hide();
     var activeTab = $(".q-tabs").find('a.active-filter').data('trigger');
     $('#' + activeTab).show();
@@ -24,7 +37,7 @@ $(document).ready(function () {
         $(this).siblings('a').removeClass('active-filter');
     });
 
-    var $card = $("#content-1");
+    // var $card = $("#content-1");
 
 
     /// card ///

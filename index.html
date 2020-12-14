@@ -19,8 +19,36 @@
 </head>
 <body>
     <!-- هدر -->
-    <header class="header flex justi-center">
-        <div class="header__main flex r-reverse align-center justi-between">
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-toggleable">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">همکاران</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">دانستنی ها</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="d-none d-lg-flex ml-auto">
+                    <i class="fas fa-user"></i>
+                    <p>ثبت نام <span>/</span> ورود</p>
+                </div>
+            </nav>
+        </div>
+        <!-- <div class="header__main flex r-reverse align-center justi-between">
             <div class=" flex r-reverse align-center">
                 <img src="assets/img/logo.png">
                 <nav>
@@ -35,38 +63,233 @@
                 <i class="fas fa-user"></i>
                 <p>ثبت نام <span>/</span> ورود</p>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <!-- نویگیشن -->
-    <nav class="navigation flex align-center justi-center">
+    <nav class="navigation navbar navbar-expand-sm navbar-dark bg-light navbar-toggleable">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">تماس با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">درباره‌ی ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">همکاری با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">قوانین و مقررات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <nav class="navigation flex align-center justi-center">
         <ul class="flex align-center">
             <li><a href="#">تماس با ما</a></li>
             <li><a href="#">درباره‌ی ما</a></li>
             <li><a href="#">همکاری با ما</a></li>
             <li><a href="#">قوانین و مقررات</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <main>
         <!-- اطلاعات بیمه -->
-        <section class="bime homepage flex justi-center">
-            <div class="bime__main flex">
-                <div class="bime__container flex column align-center justi-around" style="width: 20%;">
-                    <a href="#" class="flex bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
-                    <a href="#" class="flex"><i class="fas fa-motorcycle"></i> موتور سیکلت</a>
-                    <a href="#" class="flex"><i class="fas fa-car"></i> شخص ثالث </a>
-                    <a href="#" class="flex"><i class="fas fa-fire"></i> آتش سوزی </a>
-                    <a href="#" class="flex"><i class="fas fa-plane"></i> مسافرتی </a>
-                    <a href="#" class="flex"><i class="fas fa-user-md"></i> مسئولیت پزشکان </a>
-                    <a href="#" class="flex"><i class="fas fa-house-damage"></i> سازمانی </a>
-                    <a href="#" class="flex"><i class="fas fa-user-friends"></i> عمر </a>
+        <!-- <section class="bime homepage flex justi-center">
+            <div class="bime__main flex align-center">
+                <nav class="bime__container bime-tabs flex column align-center justi-around" style="width: 20%;">
+                    <a data-trigger="bime-1" class="flex bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
+                    <a data-trigger="bime-2" class="flex"><i class="fas fa-motorcycle"></i> موتور سیکلت</a>
+                    <a data-trigger="bime-3" class="flex"><i class="fas fa-car"></i> شخص ثالث </a>
+                    <a data-trigger="bime-4" class="flex"><i class="fas fa-fire"></i> آتش سوزی </a>
+                    <a data-trigger="bime-5" class="flex"><i class="fas fa-plane"></i> مسافرتی </a>
+                    <a data-trigger="bime-6" class="flex"><i class="fas fa-user-md"></i> مسئولیت پزشکان </a>
+                    <a data-trigger="bime-7" class="flex"><i class="fas fa-house-damage"></i> سازمانی </a>
+                    <a data-trigger="bime-8" class="flex"><i class="fas fa-user-friends"></i> عمر </a>
+                </nav>
+                <div class="bime__container flex column justi-around align-center" style="width: 74%;">
+                    <div class="bime__content flex column justi-around align-center" id="bime-1">
+                        <div class="bime__row flex justi-between">
+                            <div class="flex column align-start">
+                                <label>نوع وسیله نقلیه </label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> سواری</option>
+                                        <option value="vanet"> وانت </option>
+                                        <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                        <option value="kamion"> کامیون </option>
+                                        <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                        <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>برند خودرو</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> هیوندا</option>
+                                        <option value="vanet"> نیسان</option>
+                                        <option value="van"> سیترون</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>مدل خودرو</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> پژو 405</option>
+                                        <option value="vanet"> پژو 206 </option>
+                                        <option value="van"> پژو 207 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bime__row flex justi-between">
+                            <div class="flex column align-start">
+                                <label>نام شرکت بیمه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> سواری</option>
+                                        <option value="vanet"> وانت </option>
+                                        <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                        <option value="kamion"> کامیون </option>
+                                        <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                        <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>تاریخ شروع بیمه نامه</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> هیوندا</option>
+                                        <option value="vanet"> نیسان</option>
+                                        <option value="van"> سیترون</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>تاریخ پایان بیمه نامه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> پژو 405</option>
+                                        <option value="vanet"> پژو 206 </option>
+                                        <option value="van"> پژو 207 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bime__checkbox flex align-center">
+                            <span>بیمه نامه خسارت دارد</span>
+                            <div>
+                                <input id="toggle" type="checkbox" />
+                                <label for="toggle"></label>
+                            </div>
+                        </div>
+                        <div class="bime__bg-blue flex justi-between">
+                            <div class="flex column align-start">
+                                <label>نام شرکت بیمه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> سواری</option>
+                                        <option value="vanet"> وانت </option>
+                                        <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                        <option value="kamion"> کامیون </option>
+                                        <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                        <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>تاریخ شروع بیمه نامه</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> هیوندا</option>
+                                        <option value="vanet"> نیسان</option>
+                                        <option value="van"> سیترون</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>تاریخ پایان بیمه نامه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> پژو 405</option>
+                                        <option value="vanet"> پژو 206 </option>
+                                        <option value="van"> پژو 207 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bime__row flex justi-between">
+                            <div class="flex column align-start">
+                                <label>نام شرکت بیمه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> سواری</option>
+                                        <option value="vanet"> وانت </option>
+                                        <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                        <option value="kamion"> کامیون </option>
+                                        <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                        <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>تاریخ شروع بیمه نامه</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> هیوندا</option>
+                                        <option value="vanet"> نیسان</option>
+                                        <option value="van"> سیترون</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex column align-start">
+                                <label>تاریخ پایان بیمه نامه قبلی</label>
+                                <div class="container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> پژو 405</option>
+                                        <option value="vanet"> پژو 206 </option>
+                                        <option value="van"> پژو 207 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bime__row flex justi-end">
+                            <button class="bime__btn bg-green">ثبت اطلاعات جدید</button>
+                        </div>
+                    </div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-2"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-3"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-4"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-5"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-6"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-7"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-8"></div>
                 </div>
-                <div class="bime__container flex column justi-around align-center" style="width: 74%; height: 100%;">
-                    <div class="bime__row flex justi-between">
-                        <div class="flex column align-start">
+            </div>
+        </section> -->
+        <section class="bime homepage">
+            <div class="container d-flex flex-xl-row flex-column justify-content-between">
+                <nav class="bime__container bime-tabs d-flex flex-column flex-md-row flex-wrap justify-content-around align-items-center col-xl-3 col-lg-12">
+                    <a data-trigger="bime-1" class="d-flex col-xl-12 col-lg-4 bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
+                    <a data-trigger="bime-2" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-motorcycle"></i> موتور سیکلت</a>
+                    <a data-trigger="bime-3" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-car"></i> شخص ثالث </a>
+                    <a data-trigger="bime-4" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-fire"></i> آتش سوزی </a>
+                    <a data-trigger="bime-5" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-plane"></i> مسافرتی </a>
+                    <a data-trigger="bime-6" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-user-md"></i> مسئولیت پزشکان </a>
+                    <a data-trigger="bime-7" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-house-damage"></i> سازمانی </a>
+                    <a data-trigger="bime-8" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-user-friends"></i> عمر </a>
+                </nav>
+                <div class="bime__container d-flex flex-column justify-content-around align-items-center col-xl-9 col-lg-12">
+                    <div class="bime__content flex justi-around align-center flex-wrap" id="bime-1">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>نوع وسیله نقلیه </label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> سواری</option>
                                     <option value="vanet"> وانت </option>
@@ -77,9 +300,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>برند خودرو</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> هیوندا</option>
                                     <option value="vanet"> نیسان</option>
@@ -87,9 +310,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>مدل خودرو</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> پژو 405</option>
                                     <option value="vanet"> پژو 206 </option>
@@ -97,11 +320,9 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="bime__row flex justi-between">
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>نام شرکت بیمه قبلی</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> سواری</option>
                                     <option value="vanet"> وانت </option>
@@ -112,9 +333,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>تاریخ شروع بیمه نامه</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> هیوندا</option>
                                     <option value="vanet"> نیسان</option>
@@ -122,9 +343,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> پژو 405</option>
                                     <option value="vanet"> پژو 206 </option>
@@ -132,18 +353,51 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="bime__checkbox flex align-center">
-                        <span>بیمه نامه خسارت دارد</span>
-                        <div>
-                            <input id="toggle" type="checkbox" />
-                            <label for="toggle"></label>
+                        <div class="bime__checkbox row">
+                            <span>بیمه نامه خسارت دارد</span>
+                            <div>
+                                <input id="toggle" type="checkbox" />
+                                <label for="toggle"></label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bime__bg-blue flex justi-between">
-                        <div class="flex column align-start">
+                        <div class="bime__bg-blue d-flex justify-content-between">
+                            <div class="d-flex flex-column align-items-start col-4">
+                                <label>نام شرکت بیمه قبلی</label>
+                                <div class="select-container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> سواری</option>
+                                        <option value="vanet"> وانت </option>
+                                        <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                        <option value="kamion"> کامیون </option>
+                                        <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                        <option value="taxi-biron"> تاکسی، برون شهری </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-start col-4">
+                                <label>تاریخ شروع بیمه نامه</label>
+                                <div class="select-container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> هیوندا</option>
+                                        <option value="vanet"> نیسان</option>
+                                        <option value="van"> سیترون</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column align-items-start col-4">
+                                <label>تاریخ پایان بیمه نامه قبلی</label>
+                                <div class="select-container">
+                                    <select class="select2" name="country">
+                                        <option value="savari" selected> پژو 405</option>
+                                        <option value="vanet"> پژو 206 </option>
+                                        <option value="van"> پژو 207 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>نام شرکت بیمه قبلی</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> سواری</option>
                                     <option value="vanet"> وانت </option>
@@ -154,9 +408,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>تاریخ شروع بیمه نامه</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> هیوندا</option>
                                     <option value="vanet"> نیسان</option>
@@ -164,9 +418,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex column align-start">
+                        <div class="d-flex flex-column align-items-start col-4">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
-                            <div class="container">
+                            <div class="select-container">
                                 <select class="select2" name="country">
                                     <option value="savari" selected> پژو 405</option>
                                     <option value="vanet"> پژو 206 </option>
@@ -174,46 +428,17 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="bime__row flex justi-between">
-                        <div class="flex column align-start">
-                            <label>نام شرکت بیمه قبلی</label>
-                            <div class="container">
-                                <select class="select2" name="country">
-                                    <option value="savari" selected> سواری</option>
-                                    <option value="vanet"> وانت </option>
-                                    <option value="van"> ون،اتوبوس، مینی بوس </option>
-                                    <option value="kamion"> کامیون </option>
-                                    <option value="taxi-daron"> تاکسی، درون شهری </option>
-                                    <option value="taxi-biron"> تاکسی، برون شهری </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="flex column align-start">
-                            <label>تاریخ شروع بیمه نامه</label>
-                            <div class="container">
-                                <select class="select2" name="country">
-                                    <option value="savari" selected> هیوندا</option>
-                                    <option value="vanet"> نیسان</option>
-                                    <option value="van"> سیترون</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="flex column align-start">
-                            <label>تاریخ پایان بیمه نامه قبلی</label>
-                            <div class="container">
-                                <select class="select2" name="country">
-                                    <option value="savari" selected> پژو 405</option>
-                                    <option value="vanet"> پژو 206 </option>
-                                    <option value="van"> پژو 207 </option>
-                                </select>
-                            </div>
+                        <div class="bime__row">
+                            <button class="bime__btn bg-green col-3">ثبت اطلاعات جدید</button>
                         </div>
                     </div>
-                    <div class="bime__row flex justi-end">
-                        <!-- <button class="bime__btn bg-red">بستن بدون تغییر</button> -->
-                        <button class="bime__btn bg-green">ثبت اطلاعات جدید</button>
-                    </div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-2"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-3"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-4"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-5"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-6"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-7"></div>
+                    <div class="bime__content flex column justi-around align-center" id="bime-8"></div>
                 </div>
             </div>
         </section>
@@ -222,27 +447,27 @@
             <div class="reminder__main flex column justi-center align-center">
                 <h2>یادآور تمدید و اقساط بیمه</h2>
                 <form class="flex justi-around align-end" style="width: 100%;">
-                    <div class="flex column">
+                    <div class="flex column col-2">
                         <label for="type">انتخاب نوع بیمه</label>
                         <input id="type" type="text">
                     </div>
-                    <div class="flex column">
+                    <div class="flex column col-2">
                         <label for="name">نام</label>
                         <input id="name" type="text">
                     </div>
-                    <div class="flex column">
+                    <div class="flex column col-2">
                         <label for="family">نام خانوادگی</label>
                         <input id="family" type="text">
                     </div>
-                    <div class="flex column">
+                    <div class="flex column col-2">
                         <label for="phone">شماره تلفن همراه</label>
                         <input id="phone" type="text">
                     </div>
-                    <div class="flex column">
+                    <div class="flex column col-2">
                         <label for="tarikh">تاریخ اتمام بیمه نامه</label>
                         <input id="tarikh" type="text">
                     </div>
-                    <button type="submit">ثبت</button>
+                    <button type="submit" class=" col-2">ثبت</button>
                 </form>
             </div>
         </section>
@@ -310,21 +535,7 @@
                 </nav>
             </div>
             <div class="hamkar__main flex align-center justi-center">
-                <div class="h-tabcontent flex justi-around align-center  owl-carousel" id="content-1" style=" width: 60%;">
-                    <div class="card flex column align-center justi-around item">
-                        <img src="assets/img/bimema.png">
-                        <h2>بیمه ملت</h2>
-                        <a href="#">تاریخچه</a>
-                        <a href="#">اهداف و چشم اندازها</a>
-                        <a href="#">چهارچوب سازمان</a>
-                        <a href="#">اطلاعات تماس</a>
-                        <p> شركت بيمه سامان در تاریخ
-                            1383/11/27 به منظور ارائه خدمات بیمه
-                            های بازرگانی در رشته بيمه‌هاي اموال
-                            مسئوليت و اشخاص با سرمايه 200
-                        ...ميليارد ريالي منقسم به 200</p>
-                        <a class="btn" href="#">خواندن همه</a>
-                    </div>
+                <div class="h-tabcontent flex justi-around align-center " id="content-1" style=" width: 60%; height: 100%;">
                     <div class="card flex column align-center justi-around item">
                         <img src="assets/img/bimema.png">
                         <h2>بیمه ملت</h2>
@@ -498,5 +709,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

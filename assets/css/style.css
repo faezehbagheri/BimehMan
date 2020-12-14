@@ -14,16 +14,18 @@
   font-family: inherit; }
 
 html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 45%; } }
+  font-size: 62.5%;
+  direction: rtl; }
   @media only screen and (max-width: 30em) {
     html {
       font-size: 38%; } }
 
 body {
   box-sizing: border-box; }
+
+button {
+  cursor: pointer;
+  outline: none !important; }
 
 .red {
   color: #D8373E; }
@@ -104,21 +106,22 @@ body {
   .bime__container {
     background-color: rgba(204, 204, 204, 0.8);
     border-radius: 2rem;
-    margin: 0 1rem; }
-  .bime__main {
-    width: 70%; }
+    margin: 0 -1rem;
+    height: 50rem; }
+  .bime__content {
+    width: 100%; }
   .bime a,
   .bime a:link,
   .bime a:visited {
     padding: 8px 1rem;
-    width: 25rem;
     text-decoration: none;
     background-color: white;
     font-size: 1.6rem;
     color: #040F4F;
     border: 1.5px solid #040F4F;
     border-radius: 8px;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    cursor: pointer; }
     .bime a:hover,
     .bime a:link:hover,
     .bime a:visited:hover {
@@ -152,7 +155,7 @@ body {
       position: relative;
       display: block;
       width: 6rem;
-      height: 3rem;
+      height: 3.2rem;
       border-radius: 3rem;
       margin: 0 auto;
       background-color: #fff;
@@ -164,7 +167,7 @@ body {
     .bime__checkbox label:before {
       content: ' ';
       position: absolute;
-      top: 1.5px;
+      top: 2px;
       left: 2px;
       width: 2.8rem;
       height: 2.8rem;
@@ -178,11 +181,11 @@ body {
       left: 3rem;
       background-color: #fff; }
   .bime__row {
-    width: 90%;
+    width: 95%;
     margin: 1rem; }
   .bime button {
-    width: 15rem;
     height: 4.5rem;
+    font-size: 1.6rem;
     border-radius: 8px;
     color: white;
     border: 1px solid #040F4F;
@@ -191,7 +194,7 @@ body {
     cursor: pointer; }
   .bime__bg-blue {
     background-color: #040F4F;
-    width: 90%;
+    width: 100%;
     margin: 1rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -208,36 +211,6 @@ body {
 
 .small .container {
   width: 20rem; }
-
-.container {
-  margin: 0 auto;
-  width: 25rem; }
-  .container .select2 {
-    width: 100% !important;
-    text-align: right !important;
-    direction: rtl !important;
-    height: 4.5rem;
-    border-radius: 8px;
-    border: 2px solid #040F4F;
-    outline: none;
-    padding: 0 5px; }
-  .container .select2-container .select2-selection--single {
-    height: 5rem;
-    font-size: 1.6rem;
-    position: relative;
-    outline: none;
-    border: none; }
-    .container .select2-container .select2-selection--single .select2-selection__rendered {
-      line-height: 10rem; }
-    .container .select2-container .select2-selection--single .select2-selection__arrow {
-      top: 50%;
-      right: 82%;
-      transform: translate(-82%, -50%); }
-    .container .select2-container .select2-selection--single .select2-container--default .select2-results > .select2-results__options {
-      -webkit-overflow-scrolling: touch;
-      /* use momentum scrolling */
-      text-align: right !important;
-      direction: rtl !important; }
 
 .card {
   width: 25rem;
@@ -471,7 +444,7 @@ body {
     width: 100%;
     padding: 5rem 0;
     background-color: #F5F5F5;
-    min-height: 50rem; }
+    height: 65rem; }
 
 .personal-card-large {
   padding: 2.5rem 0;
@@ -736,7 +709,6 @@ body {
     top: 5%; }
   .reminder input {
     height: 4rem;
-    width: 15rem;
     border-radius: 1rem;
     border: 2px solid #040F4F;
     outline: none;
@@ -794,6 +766,57 @@ body {
 a.active-filter {
   background-color: rgba(245, 245, 245, 0.9);
   border-top: 2.5px solid #F5A11D; }
+
+.select-container {
+  margin: 0 auto;
+  width: 98%;
+  background-color: white;
+  border-radius: 1rem; }
+  .select-container .select2 {
+    width: 100% !important;
+    direction: rtl !important;
+    height: 5rem;
+    border: 1px solid #040F4F;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    outline: none;
+    padding: 0 5px;
+    color: #040F4F;
+    font-size: 1.5rem;
+    font-weight: 700; }
+    @media only screen and (max-width: 30em) {
+      .select-container .select2 {
+        font-size: 2rem;
+        height: 6rem; } }
+  .select-container .select2-selection__choice {
+    float: right; }
+  .select-container .select2-container .select2-selection--single {
+    height: 100%;
+    position: relative;
+    outline: none;
+    border: none; }
+    .select-container .select2-container .select2-selection--single .select2-selection__rendered {
+      padding: 1rem; }
+    .select-container .select2-container .select2-selection--single .select2-selection__arrow {
+      top: 50%;
+      right: 82%;
+      transform: translate(-82%, -50%); }
+    .select-container .select2-container .select2-selection--single .select2-container--default .select2-results > .select2-results__options {
+      -webkit-overflow-scrolling: touch; }
+
+.select2-results {
+  direction: rtl; }
+
+.select2-results__option {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1rem; }
+  @media only screen and (max-width: 30em) {
+    .select2-results__option {
+      font-size: 1.8rem; } }
+  .select2-results__option:hover {
+    background-color: #040F4F;
+    color: white; }
 
 .shop {
   height: 40rem;
@@ -1020,16 +1043,15 @@ a.active-filter {
   background-color: #040F4F;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
   .header__main {
-    width: 78%;
     height: 100%; }
   .header img {
     height: 6rem;
     width: 7rem; }
   .header ul {
-    list-style-type: none;
-    margin-right: 4rem; }
+    list-style-type: none; }
   .header li {
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
+    border-bottom: 3px solid transparent;
     transition: all .2s ease; }
     .header li:hover {
       border-bottom: 3px solid #3CB938; }
@@ -1063,14 +1085,13 @@ a.active-filter {
 
 .navigation {
   width: 100%;
-  height: 4.5rem;
-  direction: rtl; }
+  height: 5rem; }
   .navigation ul {
-    width: 71%;
+    width: 100%;
     height: 100%;
     background-color: #F5A11D;
     list-style-type: none;
-    padding-right: 3.8rem; }
+    margin-bottom: 0; }
   .navigation li {
     height: 100%;
     padding: 1rem 3.5rem;
