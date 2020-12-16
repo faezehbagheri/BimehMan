@@ -9,10 +9,16 @@ function openTab(selector){
 
 function saveInfo(){
     document.querySelector('#btn-1').style.display = 'none';
-    document.querySelector('#small-view').classList.remove('small');
-    var elements = document.querySelectorAll('.display');
+    var elements = document.querySelectorAll('.bime__content .col-md-3');
+    var elem = document.querySelectorAll('.display');
+    
     elements.forEach(el => {
-        el.style = 'display: flex !important;'
+        el.classList.add('col-md-4');
+        el.classList.remove('col-md-3');
+    });
+
+    elem.forEach(el => {
+        el.classList.remove('display');
     });
 }
 
