@@ -21,15 +21,14 @@
     <!-- هدر -->
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-toggleable">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.png">
-                </a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-toggleable">                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png">
+                </a>
+                <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                     <a class="nav-link" href="#">صفحه اصلی</a>
@@ -41,6 +40,32 @@
                     <a class="nav-link" href="#">دانستنی ها</a>
                     </li>
                 </ul>
+                </div>
+                                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">همکاران</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">دانستنی ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">تماس با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">درباره‌ی ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">همکاری با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">قوانین و مقررات</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="d-none d-lg-flex ml-auto">
                     <i class="fas fa-user"></i>
@@ -65,6 +90,7 @@
             </div>
         </div> -->
     </header>
+
 
     <!-- نویگیشن -->
     <nav class="navigation navbar navbar-expand-sm navbar-dark bg-light navbar-toggleable">
@@ -275,19 +301,19 @@
         </section> -->
         <section class="bime homepage">
             <div class="container d-flex flex-xl-row flex-column justify-content-between">
-                <nav class="bime__container bime-tabs d-flex flex-column flex-md-row flex-wrap justify-content-around align-items-center col-xl-3 col-lg-12">
-                    <a data-trigger="bime-1" class="d-flex col-xl-12 col-lg-4 bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
-                    <a data-trigger="bime-2" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-motorcycle"></i> موتور سیکلت</a>
-                    <a data-trigger="bime-3" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-car"></i> شخص ثالث </a>
-                    <a data-trigger="bime-4" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-fire"></i> آتش سوزی </a>
-                    <a data-trigger="bime-5" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-plane"></i> مسافرتی </a>
-                    <a data-trigger="bime-6" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-user-md"></i> مسئولیت پزشکان </a>
-                    <a data-trigger="bime-7" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-house-damage"></i> سازمانی </a>
-                    <a data-trigger="bime-8" class="d-flex col-xl-12 col-lg-4"><i class="fas fa-user-friends"></i> عمر </a>
+                <nav class="bime__container bime-tabs d-flex flex-row flex-wrap justify-content-around justify-content-md-start align-items-center col-xl-3 col-lg-12">
+                    <a data-trigger="bime-1" class="d-flex col-6 col-xl-12 col-md-4 bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
+                    <a data-trigger="bime-2" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-motorcycle"></i> موتور سیکلت</a>
+                    <a data-trigger="bime-3" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-car"></i> شخص ثالث </a>
+                    <a data-trigger="bime-4" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-fire"></i> آتش سوزی </a>
+                    <a data-trigger="bime-5" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-plane"></i> مسافرتی </a>
+                    <a data-trigger="bime-6" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-user-md"></i> مسئولیت پزشکان </a>
+                    <a data-trigger="bime-7" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-house-damage"></i> سازمانی </a>
+                    <a data-trigger="bime-8" class="d-flex col-6 col-xl-12 col-md-4 "><i class="fas fa-user-friends"></i> عمر </a>
                 </nav>
                 <div class="bime__container d-flex flex-column justify-content-around align-items-center col-xl-9 col-lg-12">
                     <div class="bime__content flex justi-around align-center flex-wrap" id="bime-1">
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>نوع وسیله نقلیه </label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -300,7 +326,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>برند خودرو</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -310,7 +336,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>مدل خودرو</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -320,7 +346,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -333,7 +359,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>تاریخ شروع بیمه نامه</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -343,7 +369,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -353,15 +379,15 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="bime__checkbox row">
+                        <div class="bime__checkbox d-flex align-items-center">
                             <span>بیمه نامه خسارت دارد</span>
                             <div>
                                 <input id="toggle" type="checkbox" />
                                 <label for="toggle"></label>
                             </div>
                         </div>
-                        <div class="bime__bg-blue d-flex justify-content-between">
-                            <div class="d-flex flex-column align-items-start col-4">
+                        <div class="bime__bg-blue d-flex justify-content-between wrap">
+                            <div class="d-flex flex-column align-items-start col-md-4 col-12">
                                 <label>نام شرکت بیمه قبلی</label>
                                 <div class="select-container">
                                     <select class="select2" name="country">
@@ -374,7 +400,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column align-items-start col-4">
+                            <div class="d-flex flex-column align-items-start col-md-4 col-12">
                                 <label>تاریخ شروع بیمه نامه</label>
                                 <div class="select-container">
                                     <select class="select2" name="country">
@@ -384,7 +410,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column align-items-start col-4">
+                            <div class="d-flex flex-column align-items-start col-md-4 col-12">
                                 <label>تاریخ پایان بیمه نامه قبلی</label>
                                 <div class="select-container">
                                     <select class="select2" name="country">
@@ -395,7 +421,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -408,7 +434,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>تاریخ شروع بیمه نامه</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -418,7 +444,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-4">
+                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -428,8 +454,8 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="bime__row">
-                            <button class="bime__btn bg-green col-3">ثبت اطلاعات جدید</button>
+                        <div class="bime__row d-flex align-items-sm-center justify-content-center justify-content-md-end col-12">
+                            <button class="bime__btn bg-green col-md-3 col-6">ثبت اطلاعات جدید</button>
                         </div>
                     </div>
                     <div class="bime__content flex column justi-around align-center" id="bime-2"></div>
@@ -446,28 +472,30 @@
         <section class="reminder flex align-center justi-center">
             <div class="reminder__main flex column justi-center align-center">
                 <h2>یادآور تمدید و اقساط بیمه</h2>
-                <form class="flex justi-around align-end" style="width: 100%;">
-                    <div class="flex column col-2">
+                <form class="flex justi-around align-end wrap" style="width: 100%;">
+                    <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="type">انتخاب نوع بیمه</label>
                         <input id="type" type="text">
                     </div>
-                    <div class="flex column col-2">
+                    <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="name">نام</label>
                         <input id="name" type="text">
                     </div>
-                    <div class="flex column col-2">
+                    <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="family">نام خانوادگی</label>
                         <input id="family" type="text">
                     </div>
-                    <div class="flex column col-2">
+                    <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="phone">شماره تلفن همراه</label>
                         <input id="phone" type="text">
                     </div>
-                    <div class="flex column col-2">
+                    <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="tarikh">تاریخ اتمام بیمه نامه</label>
                         <input id="tarikh" type="text">
                     </div>
-                    <button type="submit" class=" col-2">ثبت</button>
+                    <div class=" col-6 col-xl-2 col-lg-4">
+                        <button type="submit" class=" col-xl-12">ثبت</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -482,8 +510,8 @@
                 </nav>
             </div>
             <div class="question__main flex align-center justi-start">
-                <div class="q-tabcontent question__tab-ofoghi flex column align-center justi-start" id="content01">
-                    <div class="question__tab-item flex column align-center" id="q1" onclick="openTab('#q1')">
+                <div class="q-tabcontent question__tab-ofoghi flex column align-end justi-start col-12 col-lg-9 col-xl-8" id="content01">
+                    <div class="question__tab-item flex column align-center col-12 col-md-10 col-xs-12 col-lg-9 col-xl-9" id="q1" onclick="openTab('#q1')">
                         <div class="flex justi-between align-center">
                             <h3>آیا حتما برای صدور بیمه نامه باید حضوری مراجعه کنم ؟</h3>
                             <i class="fas fa-angle-right right"></i>
@@ -495,7 +523,7 @@
                             هم تا حد دیه ماه حرام تحت پوشش بیمه حوادث قرار می‌دهد؛ بیمه حوادث راننده
                            مسئولیت جبران خسارت‌های فوت و نقص عضو راننده مقصر را به عهده دارد</p>
                     </div>
-                    <div class="question__tab-item flex column align-center" id="q2" onclick="openTab('#q2')">
+                    <div class="question__tab-item flex column align-center col-12 col-md-10 col-lg-9 col-xl-9" id="q2" onclick="openTab('#q2')">
                         <div class="flex justi-between align-center">
                             <h3>میشه مبلغ حق بیمه رو بعد ازتحویل بیمه نامه پرداخت کنم ؟</h3>
                             <i class="fas fa-angle-right right"></i>
@@ -507,7 +535,7 @@
                             هم تا حد دیه ماه حرام تحت پوشش بیمه حوادث قرار می‌دهد؛ بیمه حوادث راننده
                            مسئولیت جبران خسارت‌های فوت و نقص عضو راننده مقصر را به عهده دارد</p>
                     </div>
-                    <div class="question__tab-item flex column align-center active-tab" id="q3" onclick="openTab('#q3')">
+                    <div class="question__tab-item flex column align-center col-12 col-md-10 col-lg-9 col-xl-9 active-tab" id="q3" onclick="openTab('#q3')">
                         <div class="flex justi-between align-center">
                             <h3>می توانم سفارش خودم را تلفنی ثبت کنم ؟</h3>
                             <i class="fas fa-angle-right right"></i>
@@ -529,13 +557,13 @@
             <!-- تب ها -->
             <div class="tab-amodi flex align-center">
                 <nav class="h-tabs">
-                    <a data-trigger="content-1" class="active-filter width">انواع بیمه نامه های همکار با سایت ما</a>
+                    <a data-trigger="content-1" class="active-filter width"> بیمه نامه های همکار با ما</a>
                     <a data-trigger="content-2">بیشترین مخاطب</a>
                     <a data-trigger="content-3">بیشترین سابقه</a>
                 </nav>
             </div>
             <div class="hamkar__main flex align-center justi-center">
-                <div class="h-tabcontent flex justi-around align-center " id="content-1" style=" width: 60%; height: 100%;">
+                <div class="h-tabcontent flex justi-around align-center col-11 col-xl-8 col-lg-10 owl-carousel" id="content-1" style="height: 100%;">
                     <div class="card flex column align-center justi-around item">
                         <img src="assets/img/bimema.png">
                         <h2>بیمه ملت</h2>
@@ -597,9 +625,9 @@
         </section>
         <!-- فروشگاه اینترنتی -->
         <section class="shop flex justi-center">
-            <div class="shop__main flex column justi-around">
-                <div class="flex r-reverse align-center justi-around">
-                    <div class="shop__card">
+            <div class="shop__main flex column justi-around align-center">
+                <div class="shop__cards flex r-reverse align-center justi-around">
+                    <div class="shop__card col-5 col-lg-3 col-xl-2">
                         <i class="fas fa-umbrella"></i>
                         <p> ایلیا در سراسر ایران اقدام به تحویل
                             فوری سفارشات نموده است سفارشات
@@ -607,21 +635,21 @@
                            گردد</p>
                         <button>سادگی در خرید</button>
                     </div>
-                    <div class="shop__card">
+                    <div class="shop__card col-5 col-lg-3 col-xl-2">
                         <i class="fas fa-truck"></i>
                         <p> در برخی موارد امکان پرداخت سفارش
                             در محل وجود ندارد اما در هر صورت
                            .ارسال کالا برای شما رایگان خواهد بود</p>
                         <button>ارسال رایگان</button>
                     </div>
-                    <div class="shop__card">
+                    <div class="shop__card col-5 col-lg-3 col-xl-2">
                         <i class="fas fa-clock"></i>
                         <p>اگر کالایی نشان غیر اصل نداشته باشد. ایلیا اصالت این بیمه ها را تضمین و
                             همۀ آن‌ها را با گارانتی اصلی و معتبر
                            .عرضه می‌کند</p>
                         <button>سرعت در خرید</button>
                     </div>
-                    <div class="shop__card">
+                    <div class="shop__card col-5 col-lg-3 col-xl-2">
                         <i class="fas fa-headphones"></i>
                         <p> در شهر تهران و برخی از شهرهای
                             پرجمعیت پرسنل ما 24 ساعته
@@ -633,7 +661,7 @@
                 <p>فروشگاه اینترنتی مو تن رو، لوازم آرایشی و بهداشتی، همراه زیبایی شما
                     فروشگاه اینترنتی مو تن رو، مجموعه ی کاملی از بهترین برندهای لوازم آرایشی و بهداشتی در سراسر جهان را فراهم آورده تا نیاز یکایک شما برای خرید اینترنتی لوازم آرایشی و بهداشتی را برآورده نماید. این مجموعه، شامل انواع لوازم آرایشی برای آرایش صورت (کرم پودر، پنکک، کانسیلر ...)، آرایش چشم (سایه چشم ، ریمل، مداد و خط چشم)، آرایش ابرو (ریمل ابرو، سایه ابرو، مداد ابرو...(، آرایش لب (رژ لب، خط لب، بالم لب)، آرایش بدن (حنای طراحی، برچسب تاتو)، آرایش ناخن (لاک ناخن ،مراقبت از ناخن، ست مانیکور پدیکور، دستگاه UV و....) و ابزار آرایش شامل: براش آرایشی، آینه، پد آرایشی، فرمژه، مژه مصنوعی، قیچی، تیغ ابرو، موچین و ... می باشد.
                     </p>
-                <span class="flex r-reverse align-center justi-center">مشاهده بیشتر <i class="shop__icon fas fa-angle-down"></i></span>
+                <button class="read-more flex r-reverse align-center justi-center">مشاهده بیشتر <i class="shop__icon fas fa-angle-down"></i></button>
             </div>
         </section>
     </main>
@@ -641,34 +669,34 @@
     <!-- فوتر -->
     <footer class="footer flex justi-center">
         <div class="footer__main flex column align-center">
-            <div class="footer__border flex align-center justi-between">
-                <div class="flex column">
+            <div class="footer__border flex align-center justi-around wrap">
+                <ul class="flex column align-center">
                     <h3>شیوه های پرداخت</h3>
-                    <a href="#">حریم خصوصی</a>
-                    <a href="#">فرصت های شغلی</a>
-                    <a href="#">رویه ارسال سفارش</a>
-                </div>
-                <div class="flex column">
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">فرصت های شغلی</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                </ul>
+                <ul class="flex column align-center">
                     <h3>شیوه های پرداخت</h3>
-                    <a href="#">حریم خصوصی</a>
-                    <a href="#">فرصت های شغلی</a>
-                    <a href="#">رویه ارسال سفارش</a>
-                </div>
-                <div class="flex column">
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">فرصت های شغلی</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                </ul>
+                <ul class="flex column align-center">
                     <h3>شیوه های پرداخت</h3>
-                    <a href="#">حریم خصوصی</a>
-                    <a href="#">فرصت های شغلی</a>
-                    <a href="#">رویه ارسال سفارش</a>
-                </div>
-                <div class="flex column">
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">فرصت های شغلی</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                </ul>
+                <ul class="flex column align-center">
                     <h3>شیوه های پرداخت</h3>
-                    <a href="#">حریم خصوصی</a>
-                    <a href="#">فرصت های شغلی</a>
-                    <a href="#">رویه ارسال سفارش</a>
-                </div>
-                <div>
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">فرصت های شغلی</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                </ul>
+                <div class="flex column align-center col-xl-3 col-12">
                     <h3>چگونه از تمدید بیمه ی خود باخبر شویم؟</h3>
-                    <form class="flex column">
+                    <form class="flex column align-center">
                         <label for="email">ایمیل خود را وارد کنید:</label>
                         <input type="email" id="email" name="email" />
                         <button type="submit">ارسال</button>
@@ -676,14 +704,14 @@
                 </div>
             </div>
             <div class="footer__border flex justi-around align-center">
-               <div class="flex">
+               <div class="">
                    <img class="footer__img-brand" src="assets/img/resane.png">
                    <img class="footer__img-brand" src="assets/img/iwmf.png">
                    <img class="footer__img-brand" src="assets/img/tandis.png">
                    <img class="footer__img-brand" src="assets/img/pic-10004.png">
                    <img class="footer__img-brand" src="assets/img/loh-ehtemam.png">
                </div>
-               <div>
+               <div class="">
                    <img class="footer__img-app" src="assets/img/app-store-button.png">
                    <img class="footer__img-app" src="assets/img/google-play-button.png">
                    <img class="footer__img-app" src="assets/img/bazaar.png">
@@ -691,7 +719,7 @@
             </div>
             <div class="footer__border flex align-center justi-center">
                 <img class="footer__absolute-pos" src="assets/img/logo.png">
-                <div class="flex column align-center justi-between" style="height: 10rem;">
+                <div class="flex column align-center justi-between" style="height: 15rem;">
                     <div class="flex">
                         <a href="#"><i class="fas fa-globe-asia"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -702,7 +730,7 @@
                         <a class="footer__left-border" href="#">ارتباط با ما</a>
                         <a class="footer__left-border" href="#">سخن ما</a>
                         <a class="footer__left-border" href="#">تبلیغات در سایت</a>
-                        <a href="#">اعلام مشکل در سایت</a>
+                        <a class="footer__left-border" href="#">اعلام مشکل در سایت</a>
                     </div>
                     <span>Iran News Agency  is licensed under a  Creative Commons Attribution 4.0 International License</span>
                 </div>
@@ -712,7 +740,7 @@
 
     <!-- CDNs -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 

@@ -6,12 +6,19 @@
         padding: 2rem 0;
         width: 100%;
         background-image: url(../../assets/img/question.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include respond(md){
+            background-image: none;
+            background-color: $color-blue;
+        }
     }
+    background-position: left;
 
     &__tab-ofoghi{
-        width: 37%;
         position: relative;
-        right: 22%;
+        // background-color: pink;
     }
 
     &__tab-item{
@@ -31,6 +38,10 @@
             font-size: 1.5rem;
             color: $gray-dark;
             font-weight: 500;
+            max-width: 80%;
+            text-align: right;
+
+            @include respond(sm){font-size: 1.8rem;}
         }
 
         i{
@@ -44,23 +55,40 @@
             transition: all .3s ease;
             position: absolute;
             left: 2%;
+
+            @include respond(sm){padding: 5px 9px;}
         }
         
         i.up{
             background-color: $green-light;
             padding: 5px 9px;
             display: none;
+            z-index: 999;
+
+            @include respond(sm){padding: 6px 9px;}
         }
 
         p{
-            width: 85%;
-            padding: 5px 2rem;
+            width: 94%;
+            left: 2%;
+            position: relative;
+            padding: 0 1rem;
             font-size: 1.4rem;
+            text-align: justify;
             color: white;
             height: 0;
             overflow: hidden;
             border-left: 2px solid white;
             transition: all .3s ease;
+            
+            @include respond(md){
+                width: 92%;
+                font-size: 1.6rem;
+            }
+
+            @include respond(sm){
+                width: 88%;
+            }
         }
 
         &:last-of-type{
@@ -75,6 +103,7 @@
     
     h3{
         color: $green-light;
+        max-width: 90%;
     }
 
     

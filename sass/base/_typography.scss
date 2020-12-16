@@ -9,3 +9,23 @@
 body{
     font-family: 'irsans';
 }
+
+input{
+    font-size: 1.5rem !important;
+}
+
+.navbar.bg-primary{
+    background-color: $blue !important;
+    text-align: right;
+}
+
+.navbar-toggler{
+    border-color: white !important;
+    padding: 4px 6px !important;
+    border-radius: 5px !important;
+}
+
+.navbar-toggler-icon{
+    font-size: 2rem;
+    color: white !important;
+}

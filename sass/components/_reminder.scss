@@ -1,16 +1,31 @@
 .reminder{
-    height: 35rem;
+    // height: 35rem;
     width: 100%;
+    padding: 3rem 0;
     background-color: $gray-light;
     direction: rtl;
 
+
     &__main{
         width: 56%;
+        // width: auto;
         height: 27rem;
         background-image: url(../../assets/img/taghvim.png);
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
+
+        @include respond(big-desktop){
+            // width: 56%;
+        }
+
+        @include respond(lg){
+            background-image: none;
+            height: 35rem;
+        }
+    }
+    div{        
+        @include respond(lg){margin-top: 2rem;}
     }
 
     h2{
@@ -18,20 +33,34 @@
         font-size: 1.7rem;
         position: absolute;
         top: 5%;
+
+        @include respond(lg){
+            color: $blue;
+            top: 1%;
+        }
+
+        @include respond(sm){font-size: 2rem;}
     }
 
     input{
         height: 4rem;
         // width: 15rem;
+        width: 100%;
         border-radius: 1rem;
         border: 2px solid $blue;
         outline: none;
         padding: 1rem;
+
+        @include respond(lg){
+            height: 5rem;
+        }
     }
 
     label{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-right: 1rem;
+
+        @include respond(lg){font-size: 1.6rem;}
     }
 
     button{
@@ -42,5 +71,10 @@
         background-color: $green;
         color: white;
         font-size: 1.4rem;
+
+        @include respond(lg){
+            height: 5rem;
+            font-size: 1.6rem;
+        }
     }
 }

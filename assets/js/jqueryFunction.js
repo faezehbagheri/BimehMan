@@ -37,7 +37,7 @@ $(document).ready(function () {
         $(this).siblings('a').removeClass('active-filter');
     });
 
-    // var $card = $("#content-1");
+    var $card = $("#content-1");
 
 
     /// card ///
@@ -51,7 +51,19 @@ $(document).ready(function () {
         // autoplay: true,
         // autoplayTimeout: 5000,
         // autoplayHoverPause: true,
-        items: 4,
+        responsive:{
+            0:{
+                items: 1,
+            },
+
+            900:{
+                items: 3,
+            },
+            1500:{
+                items:4,
+            }
+        },
+        rtl: true,
     });
 
     $(document).on('click', '.owl-item>div', function () {

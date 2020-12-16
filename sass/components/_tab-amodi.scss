@@ -5,6 +5,11 @@
     nav{
         position: relative;
         right: 22%;
+
+        @include respond(sm){
+            right: 0 !important;
+            margin: auto;
+        }
     }
 
     a,
@@ -16,14 +21,22 @@
         margin-left: 1rem;
         display: inline-block;
         padding: 3.2rem 0;
+        text-align: center;
         width: 12rem;
         cursor: pointer;
         transition: all .3s ease;
+        position: relative;
+
+        @include respond(sm){
+            font-size: 1.6rem;
+            padding: 3rem 0;
+        }
 
         &::before{
             content: "";
             position: absolute;
             top: 0;
+            right: 0;
             height: 0%;
             width: 12rem;
             background-color: rgba($color: #000000, $alpha: .1);
@@ -35,10 +48,10 @@
     }
 
     a.width{
-        width: 22rem;
+        width: 18rem;
 
         &::before{
-            width: 22rem;
+            width: 18rem;
         }
     }
 

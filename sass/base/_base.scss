@@ -15,19 +15,21 @@ html {
     
     // @include respond(tab-port){ font-size: 50%; }
 
-    // @include respond(smallest){ font-size: 45%; }
+    // @include respond(sm){ font-size: 45%; }
     
-    @include respond(phone){ font-size: 38%; }
+    @include respond(phone){ font-size: 50%; }
 }
 
 body {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 button{
     cursor: pointer;
     outline: none !important;
 }
+
 
 // .container{
 //     @include respond(tab-port){

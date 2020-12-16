@@ -8,15 +8,36 @@
     &__main{
         width: 78%;
         position: relative;
+
+        @include respond(sm){width: 85%;}
     }
 
     &__border{
         width: 100%;
-            padding: 1.5rem;
+        padding: 1.5rem;
 
-            &:not(:last-of-type){
-                border-bottom: 1px solid white;
-            }
+        &:not(:last-of-type){
+            border-bottom: 1px solid white;
+        }
+    }
+
+    ul{
+        list-style: none;
+        width: 15%;
+        // background-color: pink;
+
+        @include respond(lg){
+            width: 23%;
+        }
+
+        @include respond(md){
+            width: 48%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    li{
+        margin-top: 8px;
     }
     
     h3{
@@ -24,6 +45,8 @@
         font-weight: 100;
         color: $orange;
         margin: 1rem;
+
+        @include respond(sm){font-size: 1.8rem;}
     }
 
     a,
@@ -33,15 +56,23 @@
         color: white;
         text-decoration: none;
         margin: 5px;
+
+        @include respond(sm){
+            font-size: 1.6rem;
+            margin-top: 8px;
+        }
     }
 
     label{
         font-size: 1.3rem;
         color: white;
         margin-bottom: 1rem;
+
+        @include respond(sm){font-size: 1.6rem;}
     }
 
     input{
+        width: 25rem;
         height: 3.5rem;
         border-radius: 6px;
         border: none;
@@ -49,10 +80,19 @@
         box-shadow: 0 0 5px rgba($color: #000000, $alpha: .5);
         margin-bottom: 1rem;
         padding: 1rem;
+
+        @include respond(sm){
+            width: 30rem;
+            height: 5rem;
+        }
+    }
+
+    form{
+        width: 100%;
     }
 
     button{
-        width: 65%;
+        width: 25rem;
         height: 3.5rem;
         border-radius: 6px;
         background-color: $green;
@@ -62,39 +102,61 @@
         outline: none;
         cursor: pointer;
         position: relative;
-        left: -15%;
+
+        @include respond(sm){
+            width: 30rem;
+            height: 5rem;
+            font-size: 1.8rem;
+        }
     }
 
     &__img-brand{
         height: 6rem;
         width: 6rem;
         margin-left:5rem;
+
+        @include respond(sm){margin: 0;}
     }
 
     &__img-app{
         height: 5rem;
         width: 18rem;
         margin-right: 3rem;
+
+        @include respond(sm){
+            margin: 0;
+        }
     }
 
     i{
         font-size: 2rem;
         color: white;
         margin-right: 1.5rem;
+
+        @include respond(sm){font-size: 3rem;}
     }
 
     &__left-border{
         padding:2px 1.5rem;
-        border-left: 1px solid white;
+        text-align: center;
+
+        &:not(:last-of-type){
+            border-left: 1px solid white;
+        }
     }
 
     span{
         font-size: 1.2rem;
         color: white;
+        text-align: center;
     }
 
     &__absolute-pos{
         position: absolute;
         right: 1%;
+
+        @include respond(md){
+            display: none;
+        }
     }
 }

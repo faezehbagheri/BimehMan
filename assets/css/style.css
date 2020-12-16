@@ -18,10 +18,11 @@ html {
   direction: rtl; }
   @media only screen and (max-width: 30em) {
     html {
-      font-size: 38%; } }
+      font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 button {
   cursor: pointer;
@@ -65,6 +66,22 @@ button {
 body {
   font-family: 'irsans'; }
 
+input {
+  font-size: 1.5rem !important; }
+
+.navbar.bg-primary {
+  background-color: #040F4F !important;
+  text-align: right; }
+
+.navbar-toggler {
+  border-color: white !important;
+  padding: 4px 6px !important;
+  border-radius: 5px !important; }
+
+.navbar-toggler-icon {
+  font-size: 2rem;
+  color: white !important; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -100,16 +117,30 @@ body {
   .bime.homepage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/background.png);
     background-position: bottom;
+    background-attachment: fixed;
     padding: 10rem 0;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media only screen and (max-width: 48em) {
+      .bime.homepage {
+        padding: 4rem 0; } }
   .bime__container {
     background-color: rgba(204, 204, 204, 0.8);
     border-radius: 2rem;
     margin: 0 -1rem;
-    height: 50rem; }
+    height: auto;
+    padding: 1rem 0; }
+    @media only screen and (max-width: 75em) {
+      .bime__container {
+        border-radius: 0 0 2rem 2rem;
+        margin: 0; }
+        .bime__container.bime-tabs {
+          border-radius: 2rem 2rem 0 0 !important; } }
   .bime__content {
     width: 100%; }
+    @media only screen and (max-width: 48em) {
+      .bime__content div {
+        margin-top: 1rem; } }
   .bime a,
   .bime a:link,
   .bime a:visited {
@@ -122,12 +153,50 @@ body {
     border-radius: 8px;
     transition: all .3s ease;
     cursor: pointer; }
+    @media only screen and (max-width: 75em) {
+      .bime a,
+      .bime a:link,
+      .bime a:visited {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #040F4F;
+        border-left: 1px solid #040F4F; }
+        .bime a:nth-child(n+1):nth-child(-n+3),
+        .bime a:link:nth-child(n+1):nth-child(-n+3),
+        .bime a:visited:nth-child(n+1):nth-child(-n+3) {
+          border-top: 1px solid #040F4F; }
+        .bime a:nth-child(3n+1),
+        .bime a:link:nth-child(3n+1),
+        .bime a:visited:nth-child(3n+1) {
+          border-right: 1px solid #040F4F; } }
+    @media only screen and (max-width: 48em) {
+      .bime a,
+      .bime a:link,
+      .bime a:visited {
+        border: none !important;
+        border-bottom: 1px solid #040F4F !important;
+        border-left: 1px solid #040F4F !important;
+        font-size: 1.8rem; }
+        .bime a:nth-child(n+1):nth-child(-n+2),
+        .bime a:link:nth-child(n+1):nth-child(-n+2),
+        .bime a:visited:nth-child(n+1):nth-child(-n+2) {
+          border-top: 1px solid #040F4F !important; }
+        .bime a:nth-child(2n+1),
+        .bime a:link:nth-child(2n+1),
+        .bime a:visited:nth-child(2n+1) {
+          border-right: 1px solid #040F4F !important; } }
     .bime a:hover,
     .bime a:link:hover,
     .bime a:visited:hover {
       background-color: #040F4F !important;
       color: #F5A11D !important;
       border-color: #3CB938 !important; }
+      @media only screen and (max-width: 75em) {
+        .bime a:hover,
+        .bime a:link:hover,
+        .bime a:visited:hover {
+          border-color: #040F4F !important; } }
       .bime a:hover i,
       .bime a:link:hover i,
       .bime a:visited:hover i {
@@ -137,10 +206,16 @@ body {
     color: #040F4F;
     margin-left: 3rem;
     transition: all .3s ease; }
+    @media only screen and (max-width: 48em) {
+      .bime i {
+        font-size: 3rem; } }
   .bime label {
     font-size: 1.3rem;
     color: #040F4F;
     margin: 0 1rem; }
+    @media only screen and (max-width: 48em) {
+      .bime label {
+        font-size: 1.6rem; } }
   .bime__checkbox {
     width: 90%;
     margin: 1rem; }
@@ -148,6 +223,9 @@ body {
       font-size: 1.4rem;
       color: #040F4F;
       margin: 0 1rem; }
+      @media only screen and (max-width: 48em) {
+        .bime__checkbox span {
+          font-size: 1.8rem; } }
     .bime__checkbox input[type="checkbox"] {
       position: absolute;
       visibility: hidden; }
@@ -164,6 +242,10 @@ body {
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
       box-shadow: 0 0 3px #B2B2B2; }
+      @media only screen and (max-width: 48em) {
+        .bime__checkbox label {
+          height: 4rem;
+          width: 8rem; } }
     .bime__checkbox label:before {
       content: ' ';
       position: absolute;
@@ -175,11 +257,18 @@ body {
       border-radius: 50%;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
+      @media only screen and (max-width: 48em) {
+        .bime__checkbox label:before {
+          height: 3.5rem;
+          width: 3.5rem; } }
     .bime__checkbox input:checked + label {
       background-color: #3CB938; }
     .bime__checkbox input:checked + label:before {
       left: 3rem;
       background-color: #fff; }
+      @media only screen and (max-width: 48em) {
+        .bime__checkbox input:checked + label:before {
+          left: 4.2rem; } }
   .bime__row {
     width: 95%;
     margin: 1rem; }
@@ -206,6 +295,9 @@ body {
   background-color: #040F4F !important;
   color: #F5A11D !important;
   border-color: #3CB938 !important; }
+  @media only screen and (max-width: 75em) {
+    .bime-active {
+      border-color: #040F4F !important; } }
   .bime-active i {
     color: #F5A11D; }
 
@@ -213,18 +305,21 @@ body {
   width: 20rem; }
 
 .card {
-  width: 25rem;
   padding: 2rem 0;
   background-color: white;
   border-radius: 1.8rem;
   border: 2px solid #040F4F;
-  direction: rtl; }
+  direction: rtl;
+  margin: 0 1rem; }
   .card img {
     height: 9rem;
     width: 8rem !important; }
   .card h2 {
     font-size: 1.8rem;
     color: #3CB938; }
+    @media only screen and (max-width: 48em) {
+      .card h2 {
+        font-size: 2.2rem; } }
   .card a,
   .card a:link,
   .card a:visited {
@@ -239,6 +334,12 @@ body {
     margin: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: all .3s ease; }
+    @media only screen and (max-width: 48em) {
+      .card a,
+      .card a:link,
+      .card a:visited {
+        font-size: 2rem;
+        padding: 1.5rem 0; } }
     .card a:hover,
     .card a:link:hover,
     .card a:visited:hover {
@@ -445,6 +546,28 @@ body {
     padding: 5rem 0;
     background-color: #F5F5F5;
     height: 65rem; }
+  .hamkar .owl-nav {
+    display: block !important; }
+  .hamkar .owl-prev {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    transform: translate(-10%, -40%);
+    border-radius: 50%; }
+    .hamkar .owl-prev span {
+      font-size: 5rem; }
+  .hamkar .owl-next {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    transform: translate(-10%, -40%);
+    border-radius: 50%; }
+    .hamkar .owl-next span {
+      font-size: 5rem; }
 
 .personal-card-large {
   padding: 2.5rem 0;
@@ -623,16 +746,21 @@ body {
       margin-bottom: 1rem; }
 
 .question {
-  direction: rtl; }
+  direction: rtl;
+  background-position: left; }
   .question__main {
     min-height: 50rem;
     padding: 2rem 0;
     width: 100%;
-    background-image: url(../../assets/img/question.png); }
+    background-image: url(../../assets/img/question.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media only screen and (max-width: 61.93em) {
+      .question__main {
+        background-image: none;
+        background-color: #78a1d9; } }
   .question__tab-ofoghi {
-    width: 37%;
-    position: relative;
-    right: 22%; }
+    position: relative; }
   .question__tab-item {
     width: 100%; }
     .question__tab-item div {
@@ -646,7 +774,12 @@ body {
       margin-right: 2.5rem;
       font-size: 1.5rem;
       color: #666666;
-      font-weight: 500; }
+      font-weight: 500;
+      max-width: 80%;
+      text-align: right; }
+      @media only screen and (max-width: 48em) {
+        .question__tab-item h3 {
+          font-size: 1.8rem; } }
     .question__tab-item i {
       font-size: 2rem;
       border-radius: 50%;
@@ -658,19 +791,36 @@ body {
       transition: all .3s ease;
       position: absolute;
       left: 2%; }
+      @media only screen and (max-width: 48em) {
+        .question__tab-item i {
+          padding: 5px 9px; } }
     .question__tab-item i.up {
       background-color: #9BCA3B;
       padding: 5px 9px;
-      display: none; }
+      display: none;
+      z-index: 999; }
+      @media only screen and (max-width: 48em) {
+        .question__tab-item i.up {
+          padding: 6px 9px; } }
     .question__tab-item p {
-      width: 85%;
-      padding: 5px 2rem;
+      width: 94%;
+      left: 2%;
+      position: relative;
+      padding: 0 1rem;
       font-size: 1.4rem;
+      text-align: justify;
       color: white;
       height: 0;
       overflow: hidden;
       border-left: 2px solid white;
       transition: all .3s ease; }
+      @media only screen and (max-width: 61.93em) {
+        .question__tab-item p {
+          width: 92%;
+          font-size: 1.6rem; } }
+      @media only screen and (max-width: 48em) {
+        .question__tab-item p {
+          width: 88%; } }
     .question__tab-item:last-of-type p {
       padding: 0; }
 
@@ -678,7 +828,8 @@ body {
   position: relative;
   margin-bottom: 1rem; }
   .active-tab h3 {
-    color: #9BCA3B; }
+    color: #9BCA3B;
+    max-width: 90%; }
   .active-tab p {
     height: 20rem;
     overflow: visible;
@@ -691,8 +842,8 @@ body {
     transform: translateY(-100%); }
 
 .reminder {
-  height: 35rem;
   width: 100%;
+  padding: 3rem 0;
   background-color: #F5F5F5;
   direction: rtl; }
   .reminder__main {
@@ -702,20 +853,41 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative; }
+    @media only screen and (max-width: 75em) {
+      .reminder__main {
+        background-image: none;
+        height: 35rem; } }
+  @media only screen and (max-width: 75em) {
+    .reminder div {
+      margin-top: 2rem; } }
   .reminder h2 {
     color: white;
     font-size: 1.7rem;
     position: absolute;
     top: 5%; }
+    @media only screen and (max-width: 75em) {
+      .reminder h2 {
+        color: #040F4F;
+        top: 1%; } }
+    @media only screen and (max-width: 48em) {
+      .reminder h2 {
+        font-size: 2rem; } }
   .reminder input {
     height: 4rem;
+    width: 100%;
     border-radius: 1rem;
     border: 2px solid #040F4F;
     outline: none;
     padding: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .reminder input {
+        height: 5rem; } }
   .reminder label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-right: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .reminder label {
+        font-size: 1.6rem; } }
   .reminder button {
     width: 20rem;
     height: 4rem;
@@ -724,6 +896,10 @@ body {
     background-color: #3CB938;
     color: white;
     font-size: 1.4rem; }
+    @media only screen and (max-width: 75em) {
+      .reminder button {
+        height: 5rem;
+        font-size: 1.6rem; } }
 
 .result {
   width: 100%;
@@ -819,19 +995,30 @@ a.active-filter {
     color: white; }
 
 .shop {
-  height: 40rem;
+  height: auto;
   width: 100%;
   background-color: #F5F5F5;
   margin-top: 9rem; }
   .shop__main {
     width: 70%;
     border-top: 2px solid #B2B2B2; }
+    @media only screen and (max-width: 48em) {
+      .shop__main {
+        width: 90%; } }
+  @media only screen and (max-width: 61.93em) {
+    .shop__cards {
+      flex-wrap: wrap !important; } }
   .shop__card {
     width: 18%;
-    height: 12rem;
+    height: 15rem;
     border-radius: 2rem;
     border: 1px solid #040F4F;
-    position: relative; }
+    position: relative;
+    margin: 5rem 1rem; }
+    @media only screen and (max-width: 48em) {
+      .shop__card {
+        height: 19rem;
+        width: 20%; } }
     .shop__card i {
       font-size: 4rem;
       color: #040F4F;
@@ -842,6 +1029,9 @@ a.active-filter {
       top: -15%;
       left: 50%;
       transform: translate(-50%, -15%); }
+      @media only screen and (max-width: 48em) {
+        .shop__card i {
+          font-size: 5rem; } }
     .shop__card button {
       background-color: white;
       width: 12rem;
@@ -854,26 +1044,50 @@ a.active-filter {
       transform: translate(-50%, -115%);
       outline: none;
       cursor: pointer; }
+      @media only screen and (max-width: 48em) {
+        .shop__card button {
+          font-size: 1.6rem;
+          width: 14rem;
+          height: 3.5rem; } }
     .shop__card p {
       font-size: 1.2rem;
       color: #666666;
-      text-align: right;
-      padding: 2.2rem 1rem; }
+      margin: 2.5rem 0 !important;
+      height: 10rem;
+      overflow-y: auto; }
+      @media only screen and (max-width: 48em) {
+        .shop__card p {
+          font-size: 1.6rem !important;
+          height: 14rem; } }
   .shop p {
     font-size: 1.3rem;
     color: #666666;
-    text-align: right; }
-  .shop span {
+    text-align: justify;
+    margin: 2.5rem 0; }
+    @media only screen and (max-width: 48em) {
+      .shop p {
+        font-size: 1.6rem; } }
+  .shop button.read-more {
     font-size: 1.2rem;
     color: #B2B2B2;
-    cursor: pointer; }
+    cursor: pointer;
+    margin: 2rem;
+    width: 15rem;
+    background-color: transparent;
+    border: none; }
+    @media only screen and (max-width: 48em) {
+      .shop button.read-more {
+        font-size: 1.6rem; } }
   .shop__icon {
     font-size: 2rem;
     color: #F5A11D;
     padding: 1px 5px;
     border-radius: 50%;
     border: 1px solid #666666;
-    margin-right: 1rem; }
+    margin-left: 1rem; }
+    @media only screen and (max-width: 48em) {
+      .shop__icon {
+        padding: 2px 5px; } }
 
 .steps {
   display: table;
@@ -933,6 +1147,10 @@ a.active-filter {
   .tab-amodi nav {
     position: relative;
     right: 22%; }
+    @media only screen and (max-width: 48em) {
+      .tab-amodi nav {
+        right: 0 !important;
+        margin: auto; } }
   .tab-amodi a,
   .tab-amodi a:link,
   .tab-amodi a:visited {
@@ -942,24 +1160,33 @@ a.active-filter {
     margin-left: 1rem;
     display: inline-block;
     padding: 3.2rem 0;
+    text-align: center;
     width: 12rem;
     cursor: pointer;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    position: relative; }
+    @media only screen and (max-width: 48em) {
+      .tab-amodi a,
+      .tab-amodi a:link,
+      .tab-amodi a:visited {
+        font-size: 1.6rem;
+        padding: 3rem 0; } }
     .tab-amodi a::before,
     .tab-amodi a:link::before,
     .tab-amodi a:visited::before {
       content: "";
       position: absolute;
       top: 0;
+      right: 0;
       height: 0%;
       width: 12rem;
       background-color: rgba(0, 0, 0, 0.1);
       transform: scaleY(0);
       transition: transform 0.2s, height 0.2s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.1s; }
   .tab-amodi a.width {
-    width: 22rem; }
+    width: 18rem; }
     .tab-amodi a.width::before {
-      width: 22rem; }
+      width: 18rem; }
   .tab-amodi a.active-filter {
     border-top: 2.5px solid #F5A11D; }
     .tab-amodi a.active-filter::before {
@@ -974,16 +1201,34 @@ a.active-filter {
   .footer__main {
     width: 78%;
     position: relative; }
+    @media only screen and (max-width: 48em) {
+      .footer__main {
+        width: 85%; } }
   .footer__border {
     width: 100%;
     padding: 1.5rem; }
     .footer__border:not(:last-of-type) {
       border-bottom: 1px solid white; }
+  .footer ul {
+    list-style: none;
+    width: 15%; }
+    @media only screen and (max-width: 75em) {
+      .footer ul {
+        width: 23%; } }
+    @media only screen and (max-width: 61.93em) {
+      .footer ul {
+        width: 48%;
+        margin-bottom: 2rem; } }
+  .footer li {
+    margin-top: 8px; }
   .footer h3 {
     font-size: 1.4rem;
     font-weight: 100;
     color: #F5A11D;
     margin: 1rem; }
+    @media only screen and (max-width: 48em) {
+      .footer h3 {
+        font-size: 1.8rem; } }
   .footer a,
   .footer a:link,
   .footer a:visited {
@@ -991,11 +1236,21 @@ a.active-filter {
     color: white;
     text-decoration: none;
     margin: 5px; }
+    @media only screen and (max-width: 48em) {
+      .footer a,
+      .footer a:link,
+      .footer a:visited {
+        font-size: 1.6rem;
+        margin-top: 8px; } }
   .footer label {
     font-size: 1.3rem;
     color: white;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 48em) {
+      .footer label {
+        font-size: 1.6rem; } }
   .footer input {
+    width: 25rem;
     height: 3.5rem;
     border-radius: 6px;
     border: none;
@@ -1003,8 +1258,14 @@ a.active-filter {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
     padding: 1rem; }
+    @media only screen and (max-width: 48em) {
+      .footer input {
+        width: 30rem;
+        height: 5rem; } }
+  .footer form {
+    width: 100%; }
   .footer button {
-    width: 65%;
+    width: 25rem;
     height: 3.5rem;
     border-radius: 6px;
     background-color: #3CB938;
@@ -1013,37 +1274,60 @@ a.active-filter {
     border: none;
     outline: none;
     cursor: pointer;
-    position: relative;
-    left: -15%; }
+    position: relative; }
+    @media only screen and (max-width: 48em) {
+      .footer button {
+        width: 30rem;
+        height: 5rem;
+        font-size: 1.8rem; } }
   .footer__img-brand {
     height: 6rem;
     width: 6rem;
     margin-left: 5rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__img-brand {
+        margin: 0; } }
   .footer__img-app {
     height: 5rem;
     width: 18rem;
     margin-right: 3rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__img-app {
+        margin: 0; } }
   .footer i {
     font-size: 2rem;
     color: white;
     margin-right: 1.5rem; }
+    @media only screen and (max-width: 48em) {
+      .footer i {
+        font-size: 3rem; } }
   .footer__left-border {
     padding: 2px 1.5rem;
-    border-left: 1px solid white; }
+    text-align: center; }
+    .footer__left-border:not(:last-of-type) {
+      border-left: 1px solid white; }
   .footer span {
     font-size: 1.2rem;
-    color: white; }
+    color: white;
+    text-align: center; }
   .footer__absolute-pos {
     position: absolute;
     right: 1%; }
+    @media only screen and (max-width: 61.93em) {
+      .footer__absolute-pos {
+        display: none; } }
 
 .header {
   width: 100%;
-  height: 8rem;
   background-color: #040F4F;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 99; }
   .header__main {
     height: 100%; }
+  @media only screen and (min-width: 61.93em) {
+    .header div#navbarSupportedContent {
+      display: none !important; } }
   .header img {
     height: 6rem;
     width: 7rem; }
@@ -1086,6 +1370,9 @@ a.active-filter {
 .navigation {
   width: 100%;
   height: 5rem; }
+  @media only screen and (max-width: 61.93em) {
+    .navigation {
+      display: none !important; } }
   .navigation ul {
     width: 100%;
     height: 100%;

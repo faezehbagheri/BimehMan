@@ -1,11 +1,12 @@
 .card{
-    width: 25rem;
+    // width: 25rem;
     // height: 35rem;
     padding: 2rem 0;
     background-color: white;
     border-radius: 1.8rem;
     border: 2px solid $blue;
     direction: rtl;
+    margin: 0 1rem;
 
     img{
         height: 9rem;
@@ -15,6 +16,8 @@
     h2{
         font-size: 1.8rem;
         color: $green;
+
+        @include respond(sm){font-size: 2.2rem;}
     }
 
     a,
@@ -31,6 +34,11 @@
         margin: 5px;
         box-shadow: 0 0 5px rgba($color: #000000, $alpha: .3);
         transition: all .3s ease;
+
+        @include respond(sm){
+            font-size: 2rem;
+            padding: 1.5rem 0;
+        }
 
         &:hover{
             background-color: $blue;

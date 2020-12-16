@@ -1,12 +1,20 @@
 .header{
     width: 100%;
-    height: 8rem;
+    // height: 8rem;
     background-color: $blue;
     box-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+    position: relative;
+    z-index: 99;
     
     &__main{
         // width: 78%;
         height: 100%;
+    }
+
+    div#navbarSupportedContent{
+        @include respond(min-md){
+            display: none !important;
+        }
     }
 
     img{

@@ -9,4 +9,39 @@
         background-color: $gray-light;
         height: 65rem;
     }
+    
+    .owl-nav{
+        display:block !important;
+    }
+    
+    .owl-prev{
+        // color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        right:  0%;
+        top: 40%;
+        transform: translate(-10%, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 5rem;
+        
+            @include respond(phone-port){font-size: 7rem;}
+        }
+    }
+    .owl-next{
+        // color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        left: 0%;
+        top:40%;
+        transform: translate(-10%, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 5rem; 
+        
+            @include respond(phone-port){font-size: 7rem;}
+        }
+    }
 }
