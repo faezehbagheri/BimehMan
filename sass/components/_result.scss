@@ -6,13 +6,18 @@
 
     &__filter-list{
         width: 100%;
-        height: 9rem;
+        // height: 9rem;
         background-color: white;
         position: relative;
 
         div{
             position: relative;
-            left: -30%;
+            left: -34%;
+            text-align: right;
+
+            @include respond(lg){
+                left: 0;
+            }
         }
 
         a,
@@ -30,16 +35,86 @@
     }
 
     &__result-list{
-        flex: 1;
+        // flex: 1;
+        // width: 10rem;
         border-right: 8px solid rgba($color: gray, $alpha: .5);
         padding-bottom: 3rem;
     }
 
-    &__row-list{
+    &__suggestion{
         width: 100%;
         background-color: $orange;
-        height: 35rem;
+        padding: 2rem 0;
         box-shadow:inset 0 0 5px rgba($color: #000000, $alpha: .3);
+
+        &--main{
+            width: 55%;
+            position: relative;
+            right: 10%;
+            transform: translate(10% , 0%);
+
+            @include respond(md){
+                right: 20%;
+                width: 80%;
+            }
+
+            @include respond(sm){
+                width: 55%;
+                right: 50%;
+                transform: translate(50% , 0%);
+            }
+        }
+    }
+    
+    .owl-nav{
+        display:block !important;
+    }
+    
+    .owl-prev{
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        right:  -5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        border-radius: 50%;
+
+        // @include respond(md){
+        //     right: -18%;
+        // }
+
+        @include respond(sm){
+            right: -15%;
+        }
+
+        & span{
+            font-size: 5rem;
+        
+            @include respond(phone-port){font-size: 7rem;}
+        }
+    }
+    .owl-next{
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        left: 0%;
+        top:50%;
+        transform: translate(-10%, -50%);
+        border-radius: 50%;
+
+        @include respond(md){
+            left: 3%;
+        }
+
+        @include respond(sm){
+            left: -15%;
+        }
+
+        & span{
+            font-size: 5rem; 
+        
+            @include respond(phone-port){font-size: 7rem;}
+        }
     }
 
     &__column-list{
@@ -49,6 +124,11 @@
         &::-webkit-scrollbar {
             width: 0;
         }
+    }
+
+    i{
+        font-size: 2.5rem;
+        padding: 3px;
     }
 }
 

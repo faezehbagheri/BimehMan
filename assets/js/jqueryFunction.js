@@ -38,6 +38,7 @@ $(document).ready(function () {
     });
 
     var $card = $("#content-1");
+    var $suggestion = $("#suggestion");
 
 
     /// card ///
@@ -55,7 +56,6 @@ $(document).ready(function () {
             0:{
                 items: 1,
             },
-
             900:{
                 items: 3,
             },
@@ -69,6 +69,32 @@ $(document).ready(function () {
     $(document).on('click', '.owl-item>div', function () {
         var $speed = 300;  // in ms
         $card.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
+
+    
+    /// suggestion ///
+    $suggestion.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $suggestion.owlCarousel({
+        responsive:{
+            0:{
+                items: 1,
+            },
+            500:{
+                items: 2,
+            },
+            1500:{
+                items:4,
+            }
+        },
+        rtl: true,
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $suggestion.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
     });
     
 });

@@ -1,11 +1,13 @@
 .steps{
     display: table;
     table-layout: fixed;
-    // width: 73%;
+    width: 73%;
     position: relative;
     left: 2%;
     direction: rtl;
     z-index: 9;
+
+    @include respond(sm){width: 100%;}
 
     > li{
         counter-increment: stepNum;

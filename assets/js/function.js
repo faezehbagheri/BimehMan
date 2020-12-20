@@ -9,7 +9,7 @@ function openTab(selector){
 
 function saveInfo(){
     document.querySelector('#btn-1').style.display = 'none';
-    var elements = document.querySelectorAll('.bime__content .col-md-3');
+    var elements = document.querySelectorAll('.content .col-md-3');
     var elem = document.querySelectorAll('.display');
     
     elements.forEach(el => {
