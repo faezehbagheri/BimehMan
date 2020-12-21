@@ -1,5 +1,9 @@
 function showTable(selector){
-    document.querySelector(selector).classList.toggle('display');
+    document.querySelector(selector).classList.toggle('show-more');
+}
+
+function showAghsat(selector){
+    document.querySelector(selector).classList.toggle('show-aghsat')
 }
 
 function openTab(selector){ 
@@ -9,24 +13,36 @@ function openTab(selector){
 
 function saveInfo(){
     document.querySelector('#btn-1').style.display = 'none';
+    document.querySelector('.bime.result-page').classList.toggle('show-others')
     var elements = document.querySelectorAll('.content .col-md-3');
-    var elem = document.querySelectorAll('.display');
+    // var elem = document.querySelectorAll('.animate-toTop');
     
     elements.forEach(el => {
         el.classList.add('col-md-4');
         el.classList.remove('col-md-3');
     });
 
-    elem.forEach(el => {
-        el.classList.remove('display');
-    });
+    // elem.forEach(el => {
+    //     el.style = 'transform: translateY(0%);'
+    // });
 }
 
 function closeWithoutSave(){
     document.querySelector('#btn-1').style.display = 'inline';
-    document.querySelector('#small-view').classList.add('small');
-    var elements = document.querySelectorAll('.display');
+    document.querySelector('.bime.result-page').classList.toggle('show-others')
+    var elements = document.querySelectorAll('.content .col-md-4');
+    var i=0;
     elements.forEach(el => {
-        el.style = 'display: none !important;'
+        if(i >= 3){
+            return
+        }
+        el.classList.add('col-md-3');
+        el.classList.remove('col-md-4');
+        i++;
+    });
+
+    var elements = document.querySelectorAll('.animate-toTop');
+    elements.forEach(el => {
+        
     });
 }

@@ -15,6 +15,23 @@
         @include respond(sm){padding: 4rem 0;}
         
     }
+
+    &.result-page{
+        height: 10rem;
+        overflow: hidden;
+        transition: all .4s ease;
+
+        @include respond(md){
+            min-height: 18rem;
+        }
+
+        @include respond(sm){height: 42rem;}
+    }
+
+    .animate-toTop{
+        transform: translateY(95%);
+        transition: all .4s ease;
+    }
     
     &__container{
         background-color: rgba($color: #ccc, $alpha: .8);
@@ -229,6 +246,18 @@
 .small{
     .container{
         width: 20rem;
+    }
+}
+
+.show-others{
+    height: 48rem !important;
+
+    @include respond(md){height: 52rem !important;}
+    @include respond(sm){height: 130rem !important;}
+
+
+    .animate-toTop{
+        transform: translateY(0);
     }
 }
 

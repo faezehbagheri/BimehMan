@@ -81,22 +81,22 @@
         <!-- استپ های افقی -->
         <section class="main__step-section flex align-center justi-center col-sm-12">
             <ul class="steps">
-                <li><i class="fas fa-glasses"></i>ورود به پنل کاربری</li>
-                <li><i class="fas fa-comments"></i> انتخاب</li>
-                <li class="is-active"><i class="fas fa-signal"></i> اطلاعات ارسال</li>
-                <li><i class="fas fa-question"></i>اطلاعات پرداخت</li>
-                <li><i class="fas fa-check"></i>پایان</li>
+                <li><i class="fas fa-glasses d-none d-sm-inline"></i>ورود به پنل کاربری</li>
+                <li><i class="fas fa-comments d-none d-sm-inline"></i> انتخاب</li>
+                <li class="is-active"><i class="fas fa-signal d-none d-sm-inline"></i> اطلاعات ارسال</li>
+                <li><i class="fas fa-question d-none d-sm-inline"></i>اطلاعات پرداخت</li>
+                <li><i class="fas fa-check d-none d-sm-inline"></i>پایان</li>
               </ul>
         </section>
         <!-- اطلاعات بیمه -->
-        <section class="bime">
+        <section class="bime result-page">
             <div class="container d-flex flex-xl-row flex-column align-items-start justify-content-between">
                 <nav class="d-flex justi-center col-xl-3 col-lg-12 " style="padding-top: 2rem;">
                     <a data-trigger="bime-1" class="tabs d-flex col-10 col-xl-12 col-md-4 bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
                 </nav>
                 <div class=" d-flex flex-column justify-content-around align-items-center col-xl-9 col-lg-12">
                     <div class="content flex justi-around align-center flex-wrap" id="bime-1" style="width: 100%;">
-                        <div class="flex flex-column align-items-start col-md-3 col-12">
+                        <div class="flex flex-column align-items-start col-md-3 col-12" style="transition: all .4s ease;">
                             <label>نوع وسیله نقلیه </label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -109,7 +109,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-3 col-12">
+                        <div class="flex flex-column align-items-start col-md-3 col-12" style="transition: all .4s ease;">
                             <label>برند خودرو</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -119,7 +119,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-3 col-12">
+                        <div class="flex flex-column align-items-start col-md-3 col-12" style="transition: all .4s ease;">
                             <label>مدل خودرو</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <button class="btn btn-success col-md-2 col-6 " style="margin-top: 2rem;" onclick="saveInfo()" id="btn-1">ثبت اطلاعات جدید</button>
-                        <div class="flex flex-column align-items-start col-md-4 col-12 display">
+                        <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -143,7 +143,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-4 col-12 display">
+                        <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>تاریخ شروع بیمه نامه</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -153,7 +153,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-4 col-12 display">
+                        <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -163,14 +163,14 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="bime__checkbox flex align-items-center display">
+                        <div class="bime__checkbox flex align-items-center animate-toTop">
                             <span>بیمه نامه خسارت دارد</span>
                             <div>
                                 <input id="toggle" type="checkbox" />
                                 <label for="toggle"></label>
                             </div>
                         </div>
-                        <div class="bime__bg-blue flex justify-content-between wrap display">
+                        <div class="bime__bg-blue flex justify-content-between wrap animate-toTop">
                             <div class="flex flex-column align-items-start col-md-4 col-12">
                                 <label>نام شرکت بیمه قبلی</label>
                                 <div class="select-container">
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-4 col-12 display">
+                        <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -218,7 +218,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-4 col-12 display">
+                        <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>تاریخ شروع بیمه نامه</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -228,7 +228,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="flex flex-column align-items-start col-md-4 col-12 display">
+                        <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -238,7 +238,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="bime__row flex align-items-sm-center justify-content-center col-11 display">
+                        <div class="bime__row flex align-items-sm-center justify-content-center col-11 animate-toTop">
                             <button class="bime__btn bg-green col-md-3 col-5">ثبت اطلاعات جدید</button>
                             <button class="bime__btn bg-red col-md-3 col-5" onclick="closeWithoutSave()">بستن بدون تغییر</button>
                         </div>
@@ -428,10 +428,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-lg-row">
+            <div class="d-flex flex-column flex-lg-row align-items-start">
                 <!-- فیلتر -->
-                <div class="navbar navbar-expand-lg navbar-dark navbar-toggleable d-flex align-items-end justify-content-end filter col-12 col-lg-3">                    
-                    <div class="collapse navbar-collapse filter__main flex column align-center justi-around col-12 col-sm-8" id="filterContent">
+                <div class="filter navbar navbar-expand-lg navbar-dark navbar-toggleable d-flex align-items-end justify-content-end col-12 col-lg-3 col-xl-4">                    
+                    <div class="collapse navbar-collapse filter__main flex column align-center justi-around col-12 col-xl-6" id="filterContent">
                         <div class="flex column align-center">
                             <label>مدت اعتبار بیمه نامه</label>
                             <input type="text">
@@ -476,7 +476,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="result__result-list d-flex flex-column col-12 col-lg-9">
+                <div class="result__result-list d-flex flex-column col-12 col-lg-9 col-xl-8">
                     <!-- پیشنهادها -->
                     <div class="result__suggestion">
                         <div class="result__suggestion--main d-flex owl-carousel" id="suggestion" >
@@ -507,7 +507,7 @@
                         </div>
                     </div>
                     <!-- لیست بیمه ها -->
-                    <div class="result__column-list flex column ">
+                    <div class="d-flex flex-column">
                         <div class="personal-card-large flex column align-center" id="card-1">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
                                 <div class="personal-card-large__tooltip d-flex flex-row flex-sm-column justify-content-between">
@@ -533,55 +533,56 @@
                                 </div>
                                 <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
                                     <button class="bg-green">خرید نقدی</button>
-                                    <button class="bg-blue-light">مشاهده‌ی قسط</button>
+                                    <button class="bg-blue-light" onclick="showAghsat('#card-1')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
                                 </div>
                             </div>
-                            <!-- <div class="personal-card-large__ghest flex column">
-                                <div class="flex justi-between">
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                            <div class="table d-flex justify-content-center">
+                                <table>
+                                    <tr>
+                                        <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
+                                        <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
+                                        <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
+                                        <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
+                                        <td>کهنگی <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>میزان تخفیف ارائه شده <span>0%</span></td>
+                                        <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
+                                    </tr>
+                                </table>
+                                <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-1')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <div class="personal-card-large__ghest flex column">
+                                <div class="flex justi-between flex-wrap flex-sm-nowrap">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>پیش پرداخت نقدی</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط اول</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط دوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط سوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
                                 </div>
-                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>
-                                <button class="flex align-center justi-center personal-card-large__btn bishtr" onclick="showTable('#card-1')">مشاهده جزئیات <i class="fas fa-angle-down"></i></button>
-                            </div> -->
-                            <table>
-                                <tr>
-                                    <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
-                                    <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
-                                    <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
-                                    <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
-                                    <td>کهنگی <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>میزان تخفیف ارائه شده <span>0%</span></td>
-                                    <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
-                                </tr>
-                            </table>
-                            <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-1')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
+                            </div>                             
                         </div>
                         <div class="personal-card-large flex column align-center" id="card-2">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
@@ -590,8 +591,8 @@
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
-                                    <img src="assets/img/12.jpg">
-                                    <h3>بیمه رازی</h3>
+                                    <img src="assets/img/parsian.png">
+                                    <h3>بیمه پارسیان</h3>
                                 </div>
                                 <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
@@ -608,55 +609,56 @@
                                 </div>
                                 <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
                                     <button class="bg-green">خرید نقدی</button>
-                                    <button class="bg-blue-light">مشاهده‌ی قسط</button>
+                                    <button class="bg-blue-light" onclick="showAghsat('#card-2')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
                                 </div>
                             </div>
-                            <!-- <div class="personal-card-large__ghest flex column">
-                                <div class="flex justi-between">
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                            <div class="table d-flex justify-content-center">
+                                <table>
+                                    <tr>
+                                        <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
+                                        <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
+                                        <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
+                                        <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
+                                        <td>کهنگی <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>میزان تخفیف ارائه شده <span>0%</span></td>
+                                        <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
+                                    </tr>
+                                </table>
+                                <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-2')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <div class="personal-card-large__ghest flex column">
+                                <div class="flex justi-between flex-wrap flex-sm-nowrap">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>پیش پرداخت نقدی</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط اول</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط دوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط سوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
                                 </div>
-                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>
-                                <button class="flex align-center justi-center personal-card-large__btn bishtr" onclick="showTable('#card-2')">مشاهده جزئیات <i class="fas fa-angle-down"></i></button>
-                            </div> -->
-                            <table>
-                                <tr>
-                                    <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
-                                    <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
-                                    <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
-                                    <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
-                                    <td>کهنگی <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>میزان تخفیف ارائه شده <span>0%</span></td>
-                                    <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
-                                </tr>
-                            </table>
-                            <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-2')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
+                            </div>                             
                         </div>
                         <div class="personal-card-large flex column align-center" id="card-3">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
@@ -665,8 +667,8 @@
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
-                                    <img src="assets/img/14.jpg">
-                                    <h3>بیمه سینا</h3>
+                                    <img src="assets/img/parsian.png">
+                                    <h3>بیمه پارسیان</h3>
                                 </div>
                                 <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
@@ -683,55 +685,56 @@
                                 </div>
                                 <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
                                     <button class="bg-green">خرید نقدی</button>
-                                    <button class="bg-blue-light">مشاهده‌ی قسط</button>
+                                    <button class="bg-blue-light" onclick="showAghsat('#card-3')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
                                 </div>
                             </div>
-                            <!-- <div class="personal-card-large__ghest flex column">
-                                <div class="flex justi-between">
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                            <div class="table d-flex justify-content-center">
+                                <table>
+                                    <tr>
+                                        <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
+                                        <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
+                                        <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
+                                        <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
+                                        <td>کهنگی <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>میزان تخفیف ارائه شده <span>0%</span></td>
+                                        <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
+                                    </tr>
+                                </table>
+                                <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-3')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <div class="personal-card-large__ghest flex column">
+                                <div class="flex justi-between flex-wrap flex-sm-nowrap">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>پیش پرداخت نقدی</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط اول</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط دوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط سوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
                                 </div>
-                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>
-                                <button class="flex align-center justi-center personal-card-large__btn bishtr" onclick="showTable('#card-3')">مشاهده جزئیات <i class="fas fa-angle-down"></i></button>
-                            </div> -->
-                            <table>
-                                <tr>
-                                    <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
-                                    <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
-                                    <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
-                                    <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
-                                    <td>کهنگی <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>میزان تخفیف ارائه شده <span>0%</span></td>
-                                    <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
-                                </tr>
-                            </table>
-                            <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-3')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
+                            </div>                             
                         </div>
                         <div class="personal-card-large flex column align-center" id="card-4">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
@@ -740,8 +743,8 @@
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
-                                    <img src="assets/img/5.jpg">
-                                    <h3>بیمه معلم</h3>
+                                    <img src="assets/img/parsian.png">
+                                    <h3>بیمه پارسیان</h3>
                                 </div>
                                 <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
@@ -758,55 +761,56 @@
                                 </div>
                                 <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
                                     <button class="bg-green">خرید نقدی</button>
-                                    <button class="bg-blue-light">مشاهده‌ی قسط</button>
+                                    <button class="bg-blue-light" onclick="showAghsat('#card-4')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
                                 </div>
                             </div>
-                            <!-- <div class="personal-card-large__ghest flex column">
-                                <div class="flex justi-between">
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                            <div class="table d-flex justify-content-center">
+                                <table>
+                                    <tr>
+                                        <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
+                                        <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
+                                        <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
+                                        <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
+                                        <td>کهنگی <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>میزان تخفیف ارائه شده <span>0%</span></td>
+                                        <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
+                                    </tr>
+                                </table>
+                                <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-4')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <div class="personal-card-large__ghest flex column">
+                                <div class="flex justi-between flex-wrap flex-sm-nowrap">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>پیش پرداخت نقدی</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط اول</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط دوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط سوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
                                 </div>
-                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>
-                                <button class="flex align-center justi-center personal-card-large__btn bishtr" onclick="showTable('#card-4')">مشاهده جزئیات <i class="fas fa-angle-down"></i></button>
-                            </div> -->
-                            <table>
-                                <tr>
-                                    <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
-                                    <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
-                                    <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
-                                    <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
-                                    <td>کهنگی <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>میزان تخفیف ارائه شده <span>0%</span></td>
-                                    <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
-                                </tr>
-                            </table>
-                            <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-4')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
+                            </div>                             
                         </div>
                         <div class="personal-card-large flex column align-center" id="card-5">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
@@ -815,8 +819,8 @@
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
-                                    <img src="assets/img/13.jpg">
-                                    <h3>بیمه ملت </h3>
+                                    <img src="assets/img/parsian.png">
+                                    <h3>بیمه پارسیان</h3>
                                 </div>
                                 <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
@@ -833,55 +837,56 @@
                                 </div>
                                 <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
                                     <button class="bg-green">خرید نقدی</button>
-                                    <button class="bg-blue-light">مشاهده‌ی قسط</button>
+                                    <button class="bg-blue-light" onclick="showAghsat('#card-5')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
                                 </div>
                             </div>
-                            <!-- <div class="personal-card-large__ghest flex column">
-                                <div class="flex justi-between">
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                            <div class="table d-flex justify-content-center">
+                                <table>
+                                    <tr>
+                                        <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
+                                        <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
+                                        <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
+                                        <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
+                                        <td>کهنگی <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>میزان تخفیف ارائه شده <span>0%</span></td>
+                                        <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
+                                    </tr>
+                                </table>
+                                <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-5')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <div class="personal-card-large__ghest flex column">
+                                <div class="flex justi-between flex-wrap flex-sm-nowrap">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>پیش پرداخت نقدی</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط اول</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط دوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط سوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
                                 </div>
-                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>
-                                <button class="flex align-center justi-center personal-card-large__btn bishtr" onclick="showTable('#card-5')">مشاهده جزئیات <i class="fas fa-angle-down"></i></button>
-                            </div> -->
-                            <table>
-                                <tr>
-                                    <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
-                                    <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
-                                    <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
-                                    <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
-                                    <td>کهنگی <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>میزان تخفیف ارائه شده <span>0%</span></td>
-                                    <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
-                                </tr>
-                            </table>
-                            <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-5')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
+                            </div>                             
                         </div>
                         <div class="personal-card-large flex column align-center" id="card-6">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
@@ -890,8 +895,8 @@
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
-                                    <img src="assets/img/17.jpg">
-                                    <h3>بیمه ما</h3>
+                                    <img src="assets/img/parsian.png">
+                                    <h3>بیمه پارسیان</h3>
                                 </div>
                                 <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
@@ -908,56 +913,57 @@
                                 </div>
                                 <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
                                     <button class="bg-green">خرید نقدی</button>
-                                    <button class="bg-blue-light">مشاهده‌ی قسط</button>
+                                    <button class="bg-blue-light" onclick="showAghsat('#card-6')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
                                 </div>
                             </div>
-                            <!-- <div class="personal-card-large__ghest flex column">
-                                <div class="flex justi-between">
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                            <div class="table d-flex justify-content-center">
+                                <table>
+                                    <tr>
+                                        <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
+                                        <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
+                                        <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
+                                        <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
+                                        <td>کهنگی <span>1,674,700 تومان</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>میزان تخفیف ارائه شده <span>0%</span></td>
+                                        <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
+                                    </tr>
+                                </table>
+                                <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-6')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
+                            </div>
+                            <div class="personal-card-large__ghest flex column">
+                                <div class="flex justi-between flex-wrap flex-sm-nowrap">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>پیش پرداخت نقدی</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط اول</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط دوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
-                                    <div class="personal-card-large__dashed-border flex column align-center justi-around">
+                                    <div class="personal-card-large__dashed-border flex column align-center justi-around col-5 col-sm-3">
                                         <h3>قسط سوم</h3>
                                         <p>1,674,700 تومان</p>
                                     </div>
                                 </div>
-                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>
-                                <button class="flex align-center justi-center personal-card-large__btn bishtr" onclick="showTable('#card-6')">مشاهده جزئیات <i class="fas fa-angle-down"></i></button>
-                            </div> -->
-                            <table>
-                                <tr>
-                                    <td>نرخ بیمه شخص ثالث <span>1,674,700 تومان</span></td>
-                                    <td>اضافه نرخ کاربری <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ حوادث سرنشین <span>1,674,700 تومان</span></td>
-                                    <td>تخفیف عدم خسارت <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>نرخ مازاد مالی <span>1,674,700 تومان</span></td>
-                                    <td>جریمه دیرکرد <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>جریمه تعداد خسارت <span>1,674,700 تومان</span></td>
-                                    <td>کهنگی <span>1,674,700 تومان</span></td>
-                                </tr>
-                                <tr>
-                                    <td>میزان تخفیف ارائه شده <span>0%</span></td>
-                                    <td>درصد تخفیف عدم خسارت <span>-1%</span></td>
-                                </tr>
-                            </table>
-                            <button class="flex align-center justi-center personal-card-large__btn kamtr" onclick="showTable('#card-6')">مشاهده کمتر <i class="fas fa-angle-up"></i></button>
-                        </div> 
+                                <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
+                            </div>                             
+                        </div>
                     </div>
                 </div>
             </div>

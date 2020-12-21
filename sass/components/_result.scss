@@ -6,7 +6,6 @@
 
     &__filter-list{
         width: 100%;
-        // height: 9rem;
         background-color: white;
         position: relative;
 
@@ -31,12 +30,18 @@
             padding: 3.2rem 2rem;
             cursor: pointer;
             transition: all .3s ease;
+
+            @include respond(sm){font-size: 1.8rem;}
         }
     }
 
     &__result-list{
-        // flex: 1;
-        // width: 10rem;
+        // height: 130rem;
+        // overflow-y: scroll;
+
+        // &::-webkit-scrollbar {
+        //     width: 0;
+        // }
         border-right: 8px solid rgba($color: gray, $alpha: .5);
         padding-bottom: 3rem;
     }
@@ -48,18 +53,22 @@
         box-shadow:inset 0 0 5px rgba($color: #000000, $alpha: .3);
 
         &--main{
-            width: 55%;
+            width: 100%;
             position: relative;
-            right: 10%;
-            transform: translate(10% , 0%);
+            right: 22%;
+            transform: translate(15% , 0%);
+
+            @include respond(lg){
+                width: 80%;
+            }
 
             @include respond(md){
-                right: 20%;
+                right: 25%;
                 width: 80%;
             }
 
             @include respond(sm){
-                width: 55%;
+                width: 70%;
                 right: 50%;
                 transform: translate(50% , 0%);
             }
@@ -68,20 +77,15 @@
     
     .owl-nav{
         display:block !important;
-    }
-    
+    }    
     .owl-prev{
         text-align: center;
         padding:1rem;
+        border-radius: 50%;
         position: absolute;
         right:  -5%;
         top: 50%;
         transform: translate(-5%, -50%);
-        border-radius: 50%;
-
-        // @include respond(md){
-        //     right: -18%;
-        // }
 
         @include respond(sm){
             right: -15%;
@@ -97,32 +101,25 @@
         text-align: center;
         padding:1rem;
         position: absolute;
-        left: 0%;
+        left: 22%;
         top:50%;
-        transform: translate(-10%, -50%);
+        transform: translate(-20%, -50%);
         border-radius: 50%;
+
+        @include respond(lg){left: 5%;}
 
         @include respond(md){
             left: 3%;
         }
 
         @include respond(sm){
-            left: -15%;
+            left: -8%;
         }
 
         & span{
             font-size: 5rem; 
         
             @include respond(phone-port){font-size: 7rem;}
-        }
-    }
-
-    &__column-list{
-        height: 90rem;
-        overflow-y: scroll;
-
-        &::-webkit-scrollbar {
-            width: 0;
         }
     }
 
@@ -135,4 +132,6 @@
 a.active-filter{
     background-color: rgba($color: $gray-light, $alpha: .9);
     border-top: 2.5px solid $orange;
+
+    @include respond(md){border-top: none;}
 }
