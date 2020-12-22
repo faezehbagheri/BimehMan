@@ -3,20 +3,25 @@
     padding: 2.5rem 0 0; 
     background-color: white;
     box-shadow: 0 0 5px rgba($color: gray, $alpha: .3);
-    margin: 3rem 7rem;
+    margin: 3rem;
+    max-width: 90rem !important;
     margin-bottom: 0;
     border-radius: 2rem;
     border: 2px solid transparent;
     transition: all .3s ease;
-    max-width: 90rem;
-    position: relative;
     
-    @include respond(sm){
-        min-height: 45rem;
+    position: relative;
+
+    @include respond(big-desktop){
+        max-width: 90rem !important;
     }
         
     @include respond(lg){
         margin: 3rem 0;
+    }
+    
+    @include respond(sm){
+        min-height: 45rem;
     }
 
     &:hover{
