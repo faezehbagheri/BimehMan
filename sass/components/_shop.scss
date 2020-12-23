@@ -59,6 +59,7 @@
             transform: translate(-50% , -115%);
             outline: none;
             cursor: pointer;
+            font-size: 1.4rem;
 
             @include respond(sm){
                 font-size: 1.6rem;
@@ -68,7 +69,7 @@
         }
         
         p{
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: $gray-dark;
             // padding: 1rem;
             margin: 2.5rem 0 !important;
@@ -83,7 +84,7 @@
     }
 
     p{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         color: $gray-dark;
         text-align: justify;
         margin: 2.5rem 0;

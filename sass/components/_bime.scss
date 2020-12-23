@@ -4,6 +4,7 @@
     direction: rtl;
     padding: 1rem;
     
+    
     &.homepage{
         background-image: linear-gradient(rgba(#000000 , .3),rgba(#000000 , .3)),url(../../assets/img/background.png);
         background-position: bottom;
@@ -12,20 +13,22 @@
         background-repeat: no-repeat;
         background-size: cover;
 
+        .bime__container{min-height: 55rem;}
+
         @include respond(sm){padding: 4rem 0;}
         
     }
 
     &.result-page{
-        height: 10rem;
+        height: 13rem;
         overflow: hidden;
         transition: all .4s ease;
 
-        @include respond(md){
-            min-height: 18rem;
+        @include respond(lg){
+            min-height: 21rem;
         }
 
-        @include respond(sm){height: 42rem;}
+        @include respond(sm){height: 50rem;}
     }
 
     .animate-toTop{
@@ -125,9 +128,9 @@
     }
 
     label{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: $blue;
-        margin:0 1rem;
+        margin:1.5rem 1rem 8px;
 
         @include respond(sm){font-size: 1.6rem;}
     }
@@ -221,7 +224,7 @@
         background-color: $blue;
         width: 100%;
         margin: 1rem; 
-        padding: 1rem 2rem; 
+        padding: 1rem 0 !important; 
         border-radius: 1rem; 
         border: 1px dashed white;
 
@@ -250,10 +253,10 @@
 }
 
 .show-others{
-    height: 48rem !important;
+    height: 58rem !important;
 
-    @include respond(md){height: 52rem !important;}
-    @include respond(sm){height: 130rem !important;}
+    @include respond(lg){height: 65rem !important;}
+    @include respond(sm){height: 145rem !important;}
 
 
     .animate-toTop{

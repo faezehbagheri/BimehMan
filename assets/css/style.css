@@ -56,15 +56,13 @@ button {
   background-color: #1E96FC !important; }
 
 @font-face {
-  font-family: 'irsans-bold';
-  src: url(../../assets/fonts/iransans-bold/iransansweb_bold.eot?) format("embedded-opentype"), url(../../assets/fonts/iransans-bold/iransansweb_bold.ttf) format("truetype"), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff) format("woff"), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff2) format("woff2"); }
-
-@font-face {
-  font-family: 'irsans';
-  src: url(../../assets/fonts/iransans/iransansweb.eot?) format("embedded-opentype"), url(../../assets/fonts/iransans/iransansweb.ttf) format("truetype"), url(../../assets/fonts/iransans/iransansweb.woff) format("woff"), url(../../assets/fonts/iransans/iransansweb.woff2) format("woff2"); }
+  font-family: Vazir;
+  src: url("Vazir.eot");
+  src: url("Vazir.eot?#iefix") format("embedded-opentype"), url("Vazir.woff") format("woff"), url("Vazir.ttf") format("truetype");
+  font-weight: normal; }
 
 body {
-  font-family: 'irsans'; }
+  font-family: Vazir !important; }
 
 input {
   font-size: 1.5rem !important; }
@@ -124,19 +122,21 @@ input {
     padding: 10rem 0;
     background-repeat: no-repeat;
     background-size: cover; }
+    .bime.homepage .bime__container {
+      min-height: 55rem; }
     @media only screen and (max-width: 48em) {
       .bime.homepage {
         padding: 4rem 0; } }
   .bime.result-page {
-    height: 10rem;
+    height: 13rem;
     overflow: hidden;
     transition: all .4s ease; }
-    @media only screen and (max-width: 61.93em) {
+    @media only screen and (max-width: 75em) {
       .bime.result-page {
-        min-height: 18rem; } }
+        min-height: 21rem; } }
     @media only screen and (max-width: 48em) {
       .bime.result-page {
-        height: 42rem; } }
+        height: 50rem; } }
   .bime .animate-toTop {
     transform: translateY(95%);
     transition: all .4s ease; }
@@ -226,9 +226,9 @@ input {
       .bime i {
         font-size: 3rem; } }
   .bime label {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #040F4F;
-    margin: 0 1rem; }
+    margin: 1.5rem 1rem 8px; }
     @media only screen and (max-width: 48em) {
       .bime label {
         font-size: 1.6rem; } }
@@ -301,7 +301,7 @@ input {
     background-color: #040F4F;
     width: 100%;
     margin: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0 !important;
     border-radius: 1rem;
     border: 1px dashed white; }
     .bime__bg-blue label {
@@ -321,13 +321,13 @@ input {
   width: 20rem; }
 
 .show-others {
-  height: 48rem !important; }
-  @media only screen and (max-width: 61.93em) {
+  height: 58rem !important; }
+  @media only screen and (max-width: 75em) {
     .show-others {
-      height: 52rem !important; } }
+      height: 65rem !important; } }
   @media only screen and (max-width: 48em) {
     .show-others {
-      height: 130rem !important; } }
+      height: 145rem !important; } }
   .show-others .animate-toTop {
     transform: translateY(0); }
 
@@ -453,7 +453,8 @@ input {
         font-size: 2rem !important; } }
   .filter label {
     font-size: 1.4rem;
-    color: #040F4F; }
+    color: #040F4F;
+    margin-top: 2rem; }
     @media only screen and (max-width: 48em) {
       .filter label {
         font-size: 2rem; } }
@@ -668,7 +669,6 @@ input {
   background-color: white;
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
   margin: 3rem;
-  max-width: 90rem !important;
   margin-bottom: 0;
   border-radius: 2rem;
   border: 2px solid transparent;
@@ -686,8 +686,13 @@ input {
   .personal-card-large:hover {
     border: 2px solid #3CB938; }
   .personal-card-large__tooltip {
-    width: 100%;
-    position: absolute !important; }
+    width: 40%;
+    position: absolute !important;
+    right: 0;
+    z-index: 9; }
+    @media only screen and (max-width: 61.93em) {
+      .personal-card-large__tooltip {
+        width: 100%; } }
   .personal-card-large__clip-path {
     width: 8rem;
     height: 3rem;
@@ -1048,7 +1053,8 @@ input {
     @media only screen and (max-width: 75em) {
       .reminder__main {
         background-image: none;
-        height: 35rem; } }
+        height: 35rem;
+        width: 100%; } }
   @media only screen and (max-width: 75em) {
     .reminder div {
       margin-top: 2rem; } }
@@ -1065,15 +1071,20 @@ input {
       .reminder h2 {
         font-size: 2rem; } }
   .reminder input {
-    height: 4rem;
-    width: 100%;
+    width: 100% !important;
+    direction: rtl !important;
+    height: 5rem;
+    border: 1px solid #040F4F;
     border-radius: 1rem;
-    border: 2px solid #040F4F;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
     outline: none;
-    padding: 1rem; }
-    @media only screen and (max-width: 75em) {
+    padding: 0 5px;
+    color: #040F4F;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 30em) {
       .reminder input {
-        height: 5rem; } }
+        font-size: 2rem;
+        height: 6rem; } }
   .reminder label {
     font-size: 1.3rem;
     margin-right: 1rem; }
@@ -1081,8 +1092,7 @@ input {
       .reminder label {
         font-size: 1.6rem; } }
   .reminder button {
-    width: 20rem;
-    height: 4rem;
+    height: 5rem;
     border-radius: 1rem;
     border: 2px solid #040F4F;
     background-color: #3CB938;
@@ -1209,8 +1219,7 @@ a.active-filter {
     outline: none;
     padding: 0 5px;
     color: #040F4F;
-    font-size: 1.5rem;
-    font-weight: 700; }
+    font-size: 1.5rem; }
     @media only screen and (max-width: 30em) {
       .select-container .select2 {
         font-size: 2rem;
@@ -1223,7 +1232,8 @@ a.active-filter {
     outline: none;
     border: none; }
     .select-container .select2-container .select2-selection--single .select2-selection__rendered {
-      padding: 1rem; }
+      padding: 1rem;
+      text-align: right; }
     .select-container .select2-container .select2-selection--single .select2-selection__arrow {
       top: 50%;
       right: 82%;
@@ -1232,7 +1242,8 @@ a.active-filter {
       -webkit-overflow-scrolling: touch; }
 
 .select2-results {
-  direction: rtl; }
+  direction: rtl;
+  text-align: right; }
 
 .select2-results__option {
   cursor: pointer;
@@ -1244,6 +1255,29 @@ a.active-filter {
   .select2-results__option:hover {
     background-color: #040F4F;
     color: white; }
+
+.select2-results__options {
+  font-size: 14px !important; }
+
+.select2-results__option {
+  padding: 6px 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all .3s ease;
+  cursor: pointer; }
+
+.select2-results__option:hover {
+  color: white; }
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 200px;
+  overflow-y: auto; }
+
+.select2-container--default .select2-results__option .select2-results__option {
+  padding-left: 1em; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #040F4F; }
 
 .shop {
   height: auto;
@@ -1294,14 +1328,15 @@ a.active-filter {
       left: 50%;
       transform: translate(-50%, -115%);
       outline: none;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 1.4rem; }
       @media only screen and (max-width: 48em) {
         .shop__card button {
           font-size: 1.6rem;
           width: 14rem;
           height: 3.5rem; } }
     .shop__card p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #666666;
       margin: 2.5rem 0 !important;
       height: 10rem;
@@ -1311,7 +1346,7 @@ a.active-filter {
           font-size: 1.6rem !important;
           height: 14rem; } }
   .shop p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #666666;
     text-align: justify;
     margin: 2.5rem 0; }
@@ -1630,7 +1665,6 @@ a.active-filter {
   .navigation ul {
     width: 100%;
     height: 100%;
-    background-color: #F5A11D;
     list-style-type: none;
     margin-bottom: 0; }
   .navigation li {
@@ -1644,5 +1678,5 @@ a.active-filter {
   .navigation a:visited {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #040F4F;
+    color: #040F4F !important;
     text-decoration: none; }

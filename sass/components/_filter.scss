@@ -54,6 +54,7 @@
     label{
         font-size: 1.4rem;
         color: $blue;
+        margin-top: 2rem;
 
         @include respond(sm){font-size: 2rem;}
     }

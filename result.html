@@ -6,6 +6,10 @@
     
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+
     <script type="text/javascript" src="assets/js/function.js"></script>
     <script type="text/javascript" src="assets/js/jqueryFunction.js"></script>
 
@@ -91,7 +95,7 @@
         <!-- اطلاعات بیمه -->
         <section class="bime result-page">
             <div class="container d-flex flex-xl-row flex-column align-items-start justify-content-between">
-                <nav class="d-flex justi-center col-xl-3 col-lg-12 " style="padding-top: 2rem;">
+                <nav class="d-flex justi-center col-xl-3 col-lg-12 " style="padding-top: 4rem;">
                     <a data-trigger="bime-1" class="tabs d-flex col-10 col-xl-12 col-md-4 bime-active"><i class="fas fa-car-crash"></i> بیمه بدنه</a>
                 </nav>
                 <div class=" d-flex flex-column justify-content-around align-items-center col-xl-9 col-lg-12">
@@ -129,7 +133,7 @@
                                 </select>
                             </div>
                         </div>
-                        <button class="btn btn-success col-md-2 col-6 " style="margin-top: 2rem;" onclick="saveInfo()" id="btn-1">ثبت اطلاعات جدید</button>
+                        <button class="btn btn-success col-md-2 col-6 " style="margin-top: 4rem;" onclick="saveInfo()" id="btn-1">ثبت اطلاعات جدید</button>
                         <div class="flex flex-column align-items-start col-md-4 col-12 animate-toTop">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
@@ -584,17 +588,17 @@
                                 <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
                             </div>                             
                         </div>
-                        <div class="personal-card-large flex column align-center" id="card-2">
-                            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
-                                <div class="personal-card-large__tooltip d-flex flex-row flex-sm-column justify-content-between">
+                        <div class="personal-card-large flex column align-center col-sm-9 col-md-12 col-xl-9" id="card-2">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="width: 100%;">
+                                <div class="personal-card-large__tooltip d-flex flex-row flex-md-column justify-content-between">
                                     <span>20%</span>
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
-                                <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
+                                <div class="d-flex flex-column align-items-center align-items-md-end col-md-3 col-12 order-2">
                                     <img src="assets/img/parsian.png">
                                     <h3>بیمه پارسیان</h3>
                                 </div>
-                                <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
+                                <div class="d-flex flex-column col-md-6 col-12 order-4 order-md-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
                                         <p>44</p>
                                         <p class="flex align-baseline">4.4 <i class="fas fa-star"></i></p>
@@ -607,7 +611,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
+                                <div class="d-flex flex-md-column align-items-center col-md-3 col-12 order-3 order-md-4">
                                     <button class="bg-green">خرید نقدی</button>
                                     <button class="bg-blue-light" onclick="showAghsat('#card-2')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
@@ -660,17 +664,17 @@
                                 <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
                             </div>                             
                         </div>
-                        <div class="personal-card-large flex column align-center" id="card-3">
-                            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
-                                <div class="personal-card-large__tooltip d-flex flex-row flex-sm-column justify-content-between">
+                        <div class="personal-card-large flex column align-center col-sm-9 col-md-12 col-xl-9" id="card-3">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="width: 100%;">
+                                <div class="personal-card-large__tooltip d-flex flex-row flex-md-column justify-content-between">
                                     <span>20%</span>
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
-                                <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
+                                <div class="d-flex flex-column align-items-center align-items-md-end col-md-3 col-12 order-2">
                                     <img src="assets/img/parsian.png">
                                     <h3>بیمه پارسیان</h3>
                                 </div>
-                                <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
+                                <div class="d-flex flex-column col-md-6 col-12 order-4 order-md-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
                                         <p>44</p>
                                         <p class="flex align-baseline">4.4 <i class="fas fa-star"></i></p>
@@ -683,7 +687,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
+                                <div class="d-flex flex-md-column align-items-center col-md-3 col-12 order-3 order-md-4">
                                     <button class="bg-green">خرید نقدی</button>
                                     <button class="bg-blue-light" onclick="showAghsat('#card-3')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
@@ -736,17 +740,17 @@
                                 <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
                             </div>                             
                         </div>
-                        <div class="personal-card-large flex column align-center" id="card-4">
-                            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
-                                <div class="personal-card-large__tooltip d-flex flex-row flex-sm-column justify-content-between">
+                        <div class="personal-card-large flex column align-center col-sm-9 col-md-12 col-xl-9" id="card-4">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="width: 100%;">
+                                <div class="personal-card-large__tooltip d-flex flex-row flex-md-column justify-content-between">
                                     <span>20%</span>
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
-                                <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
+                                <div class="d-flex flex-column align-items-center align-items-md-end col-md-3 col-12 order-2">
                                     <img src="assets/img/parsian.png">
                                     <h3>بیمه پارسیان</h3>
                                 </div>
-                                <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
+                                <div class="d-flex flex-column col-md-6 col-12 order-4 order-md-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
                                         <p>44</p>
                                         <p class="flex align-baseline">4.4 <i class="fas fa-star"></i></p>
@@ -759,7 +763,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
+                                <div class="d-flex flex-md-column align-items-center col-md-3 col-12 order-3 order-md-4">
                                     <button class="bg-green">خرید نقدی</button>
                                     <button class="bg-blue-light" onclick="showAghsat('#card-4')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
@@ -812,17 +816,17 @@
                                 <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
                             </div>                             
                         </div>
-                        <div class="personal-card-large flex column align-center" id="card-5">
-                            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
-                                <div class="personal-card-large__tooltip d-flex flex-row flex-sm-column justify-content-between">
+                        <div class="personal-card-large flex column align-center col-sm-9 col-md-12 col-xl-9" id="card-5">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="width: 100%;">
+                                <div class="personal-card-large__tooltip d-flex flex-row flex-md-column justify-content-between">
                                     <span>20%</span>
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
-                                <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
+                                <div class="d-flex flex-column align-items-center align-items-md-end col-md-3 col-12 order-2">
                                     <img src="assets/img/parsian.png">
                                     <h3>بیمه پارسیان</h3>
                                 </div>
-                                <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
+                                <div class="d-flex flex-column col-md-6 col-12 order-4 order-md-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
                                         <p>44</p>
                                         <p class="flex align-baseline">4.4 <i class="fas fa-star"></i></p>
@@ -835,7 +839,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
+                                <div class="d-flex flex-md-column align-items-center col-md-3 col-12 order-3 order-md-4">
                                     <button class="bg-green">خرید نقدی</button>
                                     <button class="bg-blue-light" onclick="showAghsat('#card-5')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>
@@ -888,17 +892,17 @@
                                 <span>چک های ارائه شده توسط شما، حتما باید دارای آرم صیاد باشد</span>                
                             </div>                             
                         </div>
-                        <div class="personal-card-large flex column align-center" id="card-6">
-                            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between" style="width: 100%;">
-                                <div class="personal-card-large__tooltip d-flex flex-row flex-sm-column justify-content-between">
+                        <div class="personal-card-large flex column align-center col-sm-9 col-md-12 col-xl-9" id="card-6">
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="width: 100%;">
+                                <div class="personal-card-large__tooltip d-flex flex-row flex-md-column justify-content-between">
                                     <span>20%</span>
                                     <div class="personal-card-large__clip-path flex align-center">شامل جریمه</div>
                                 </div>
-                                <div class="d-flex flex-column align-items-center align-items-sm-end col-sm-3 col-12 order-2">
+                                <div class="d-flex flex-column align-items-center align-items-md-end col-md-3 col-12 order-2">
                                     <img src="assets/img/parsian.png">
                                     <h3>بیمه پارسیان</h3>
                                 </div>
-                                <div class="d-flex flex-column col-sm-6 col-12 order-4 order-sm-3" style="margin: 2rem 0;">
+                                <div class="d-flex flex-column col-md-6 col-12 order-4 order-md-3" style="margin: 2rem 0;">
                                     <div class="u-border-bottom flex justi-around align-baseline">
                                         <p>44</p>
                                         <p class="flex align-baseline">4.4 <i class="fas fa-star"></i></p>
@@ -911,7 +915,7 @@
                                         
                                     </div>
                                 </div>
-                                <div class="d-flex flex-sm-column align-items-center col-sm-3 col-12 order-3 order-sm-4">
+                                <div class="d-flex flex-md-column align-items-center col-md-3 col-12 order-3 order-md-4">
                                     <button class="bg-green">خرید نقدی</button>
                                     <button class="bg-blue-light" onclick="showAghsat('#card-6')">مشاهده‌ی قسط</button>
                                     <button class="black" style="display: none;">مشاهده‌ی توضیحات</button>

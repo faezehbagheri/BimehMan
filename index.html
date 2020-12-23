@@ -6,6 +6,10 @@
     
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+    
     <script type="text/javascript" src="assets/js/function.js"></script>
     <script type="text/javascript" src="assets/js/jqueryFunction.js"></script>
 
@@ -372,7 +376,7 @@
                                 <label for="toggle"></label>
                             </div>
                         </div>
-                        <div class="bime__bg-blue d-flex justify-content-between wrap">
+                        <div class="bime__bg-blue d-flex justify-content-between wrap col-12">
                             <div class="d-flex flex-column align-items-start col-md-4 col-12">
                                 <label>نام شرکت بیمه قبلی</label>
                                 <div class="select-container">
@@ -461,7 +465,17 @@
                 <form class="flex justi-around align-end wrap" style="width: 100%;">
                     <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="type">انتخاب نوع بیمه</label>
-                        <input id="type" type="text">
+                        <!-- <input id="type" type="text"> -->
+                        <div class="select-container">
+                            <select class="select2" name="country">
+                                <option value="savari" selected> سواری</option>
+                                <option value="vanet"> وانت </option>
+                                <option value="van"> ون،اتوبوس، مینی بوس </option>
+                                <option value="kamion"> کامیون </option>
+                                <option value="taxi-daron"> تاکسی، درون شهری </option>
+                                <option value="taxi-biron"> تاکسی، برون شهری </option>
+                            </select>
+                        </div>
                     </div>
                     <div class="flex column align-start col-6 col-xl-2 col-lg-4">
                         <label for="name">نام</label>
@@ -480,7 +494,7 @@
                         <input id="tarikh" type="text">
                     </div>
                     <div class=" col-6 col-xl-2 col-lg-4">
-                        <button type="submit" class=" col-xl-12">ثبت</button>
+                        <button type="submit" class=" col-12">ثبت</button>
                     </div>
                 </form>
             </div>
