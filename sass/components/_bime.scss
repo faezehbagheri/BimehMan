@@ -13,7 +13,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        .bime__container{min-height: 55rem;}
 
         @include respond(sm){padding: 4rem 0;}
         
@@ -27,6 +26,7 @@
         @include respond(lg){
             min-height: 21rem;
         }
+        .bime__container{min-height: 55rem;}
 
         @include respond(sm){height: 50rem;}
     }

@@ -23,7 +23,8 @@ input{
     font-size: 1.5rem !important;
 }
 
-.navbar.bg-primary{
+.navbar.bg-primary,
+.dropdown-menu.bg-primary{
     background-color: $blue !important;
     text-align: right;
 }

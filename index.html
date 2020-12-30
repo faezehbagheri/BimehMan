@@ -34,42 +34,50 @@
                 </a>
                 <!-- زیرمنو دسکتاپ -->
                 <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">صفحه اصلی</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">همکاران</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">دانستنی ها</a>
-                    </li>
-                </ul>
-                </div>
-                <!-- زیرمنو موبایل -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                         <a class="nav-link" href="#">صفحه اصلی</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">همکاران</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">همکاران</a>
+                            <ul class="dropdown-menu bg-primary " style="width: 20rem; right: 0;">
+                            <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 2 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 3 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 4 </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">دانستنی ها</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">تماس با ما</a>
+                    </ul>
+                </div>
+                <!-- زیرمنو موبایل -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#">صفحه اصلی</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">همکاران</a>
+                            <ul class="dropdown-menu bg-primary " style="width: 20rem; right: 0;">
+                              <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
+                              <li><a class="dropdown-item" href="#"> زیر منو 2 </a></li>
+                              <li><a class="dropdown-item" href="#"> زیر منو 3 </a></li>
+                              <li><a class="dropdown-item" href="#"> زیر منو 4 </a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">درباره‌ی ما</a>
+                        <li class="nav-item"><a class="nav-link" href="#">دانستنی ها</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> تماس با ما</a>
+                            <ul class="dropdown-menu bg-primary " style="width: 20rem; right: 0;">
+                              <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
+                                <li><a class="dropdown-item" href="#"> زیر منو 2 </a></li>
+                                <li><a class="dropdown-item" href="#"> زیر منو 3 </a></li>
+                                <li><a class="dropdown-item" href="#"> زیر منو 4 </a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">همکاری با ما</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">قوانین و مقررات</a>
-                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">درباره‌ی ما</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">همکاری با ما</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">قوانین و مقررات</a></li>
                     </ul>
                 </div>
                 <!-- ثبت نام -->
@@ -87,8 +95,14 @@
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">تماس با ما</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> تماس با ما</a>
+                        <ul class="dropdown-menu bg-light" style="width: 20rem; right: 0; height: auto;">
+                          <li><a class="dropdown-item" href="#"> زیر منو 1 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 2 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 3 </a></li>
+                            <li><a class="dropdown-item" href="#"> زیر منو 4 </a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">درباره‌ی ما</a>
@@ -303,7 +317,7 @@
                 </nav>
                 <div class="bime__container d-flex flex-column justify-content-around align-items-center col-xl-9 col-lg-12">
                     <div class="bime__content flex justi-around align-center flex-wrap" id="bime-1">
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>نوع وسیله نقلیه </label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -316,7 +330,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>برند خودرو</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -326,7 +340,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>مدل خودرو</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -336,7 +350,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -349,7 +363,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>تاریخ شروع بیمه نامه</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -359,7 +373,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -377,7 +391,7 @@
                             </div>
                         </div>
                         <div class="bime__bg-blue d-flex justify-content-between wrap col-12">
-                            <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                            <div class="text-right col-md-4 col-12">
                                 <label>نام شرکت بیمه قبلی</label>
                                 <div class="select-container">
                                     <select class="select2" name="country">
@@ -390,7 +404,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                            <div class="text-right col-md-4 col-12">
                                 <label>تاریخ شروع بیمه نامه</label>
                                 <div class="select-container">
                                     <select class="select2" name="country">
@@ -400,7 +414,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                            <div class="text-right col-md-4 col-12">
                                 <label>تاریخ پایان بیمه نامه قبلی</label>
                                 <div class="select-container">
                                     <select class="select2" name="country">
@@ -411,7 +425,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>نام شرکت بیمه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -424,7 +438,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>تاریخ شروع بیمه نامه</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
@@ -434,7 +448,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-column align-items-start col-md-4 col-12">
+                        <div class="text-right col-md-4 col-12">
                             <label>تاریخ پایان بیمه نامه قبلی</label>
                             <div class="select-container">
                                 <select class="select2" name="country">
