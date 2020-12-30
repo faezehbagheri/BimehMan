@@ -1205,42 +1205,40 @@ a.active-filter {
     a.active-filter {
       border-top: none; } }
 
-.select-container {
-  margin: 0 auto;
-  width: 98%;
-  background-color: white;
-  border-radius: 1rem; }
-  .select-container .select2 {
-    width: 100% !important;
-    direction: rtl !important;
-    height: 5rem;
-    border: 1px solid #040F4F;
-    border-radius: 1rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
-    outline: none;
-    padding: 0 5px;
-    color: #040F4F;
-    font-size: 1.5rem; }
-    @media only screen and (max-width: 30em) {
-      .select-container .select2 {
-        font-size: 2rem;
-        height: 6rem; } }
-  .select-container .select2-selection__choice {
-    float: right; }
-  .select-container .select2-container .select2-selection--single {
-    height: 100%;
-    position: relative;
-    outline: none;
-    border: none; }
-    .select-container .select2-container .select2-selection--single .select2-selection__rendered {
-      padding: 1rem;
-      text-align: right; }
-    .select-container .select2-container .select2-selection--single .select2-selection__arrow {
-      top: 50%;
-      right: 82%;
-      transform: translate(-82%, -50%); }
-    .select-container .select2-container .select2-selection--single .select2-container--default .select2-results > .select2-results__options {
-      -webkit-overflow-scrolling: touch; }
+.select2 {
+  width: 100% !important;
+  direction: rtl !important;
+  height: 5rem;
+  border: 1px solid #040F4F;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  outline: none;
+  padding: 0 5px;
+  color: #040F4F;
+  font-size: 1.5rem;
+  background-color: white; }
+  @media only screen and (max-width: 30em) {
+    .select2 {
+      font-size: 2rem;
+      height: 6rem; } }
+
+.select2-selection__choice {
+  float: right; }
+
+.select2-container .select2-selection--single {
+  height: 100%;
+  position: relative;
+  outline: none;
+  border: none; }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 1rem;
+    text-align: right; }
+  .select2-container .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%); }
+  .select2-container .select2-selection--single .select2-container--default .select2-results > .select2-results__options {
+    -webkit-overflow-scrolling: touch; }
 
 .select2-results {
   direction: rtl;
